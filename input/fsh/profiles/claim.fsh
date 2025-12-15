@@ -4,28 +4,18 @@ Id: eclaims-preauth-claim
 Title: "Preauthorization Claim Profile"
 Description: "This profile defines constraints on the Claim resource for use within the Kenya eClaims Implementation Guide. It supports preauthorization requests for inpatient and procedural services prior to claim submission."
 
-* identifier 1..* MS
-* identifier.system 1..1 MS
-* identifier.value 1..1 MS
+* insert IdentifierRequiredRule(identifier, 1..*)
 
 * status 1..1 MS
 * use 1..1 MS
 
-* type 1..1 MS
-* type.coding.system 1..1 MS
-* type.coding.code 1..1 MS
-* type.coding.display 1..1 MS
+* insert CodeableConceptRule(type, 1..1, MS)
 
-* subType 0..1 MS
-* subType.coding.code 1..1 MS
-* subType.coding.system 1..1 MS
-* subType.coding.display 1..1 MS
+* insert CodeableConceptRule(subType, 0..1, MS)
 
-* patient 1..1 MS
-* patient only Reference(EclaimsPatient)
+* insert ReferenceRule(patient, Patient, 1..1)
 
-* provider 1..1 MS
-* provider only Reference(EclaimsProviderOrganization)
+* insert ReferenceRule(provider, Organization, 1..1)
 
 * billablePeriod 1..1 MS
 * billablePeriod.start 1..1 MS
@@ -33,14 +23,17 @@ Description: "This profile defines constraints on the Claim resource for use wit
 
 * created 1..1 MS
 
-* priority 1..1 MS
-* priority.coding.system 1..1 MS
-* priority.coding.code 1..1 MS
-* priority.coding.display 1..1 MS
+* insert CodeableConceptRule(priority, 1..1, MS)
 
-* related.claim.identifier.system 1..1 MS
-* related.claim.identifier.value 1..1 MS
+* insert IdentifierRequiredRule(related.claim.identifier, 1..1)
 
 * insurance 1..* MS
-* insurance.coverage only Reference(EclaimsCoverage)
+* insurance.focal 1..1 MS
+* insert ReferenceRule(insurance.coverage, EclaimsCoverage, 1..1)
 
+* item 1..* MS
+* item.sequence 1..1 MS
+* insert CodeableConceptRule(item.productOrService, 1..1, MS)
+* item.quantity 1..1 MS
+* item.unitPrice 1..1 MS
+* item.net 1..1 MS

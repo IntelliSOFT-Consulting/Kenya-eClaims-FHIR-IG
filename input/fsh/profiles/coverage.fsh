@@ -11,5 +11,4 @@ Description: "This profile defines constraints on the Coverage resource for use 
 * status 1..1 MS
 
 * beneficiary 1..1 MS
-* beneficiary only Reference(EclaimsPatient)
-
+* beneficiary only Reference(Patient)
