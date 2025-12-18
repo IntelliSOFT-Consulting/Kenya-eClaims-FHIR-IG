@@ -71,7 +71,7 @@ used across the entire eClaims ecosystem.
 * diagnosis.sequence 1..1 MS
 * diagnosis.diagnosis[x] only CodeableConcept
 * insert CodeableConceptRule(diagnosis.diagnosisCodeableConcept, 1..1, MS)
-* diagnosis.diagnosisCodeableConcept from 
+* diagnosis.diagnosisCodeableConcept from  ClaimDiagnosisCodeableConceptVS
 
 // Attachments (PDFs, Scans)
 * supportingInfo 0..* MS
