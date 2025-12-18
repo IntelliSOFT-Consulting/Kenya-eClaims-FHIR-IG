@@ -1,0 +1,1 @@
+Alias: $0203 = http://hl7.org/fhir/v2/0203
