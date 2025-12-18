@@ -53,12 +53,25 @@ used across the entire eClaims ecosystem.
 * item.quantity 1..1 MS
 * item.unitPrice 1..1 MS
 * item.net 1..1 MS
+* item.bodySite 0..1 MS
+* item.bodySite from KenyaBodySiteVS
+* item.subSite 0..1 MS
+* item.subSite from KenyaSubSiteVS
+* item.detail 0..1 MS
+* item.detail.productOrService 1..1 MS
+* item.detail.productOrService from KenyaSocialHealthAuthorityInterventionsVS
+* item.detail.subDetail 0..1 MS
+* item.detail.subDetail.productOrService 1..1 MS
+* item.detail.subDetail.productOrService from KenyaSocialHealthAuthorityInterventionsVS
+
+
 
 // Clinical & Supporting Info
 * diagnosis 1..* MS
 * diagnosis.sequence 1..1 MS
 * diagnosis.diagnosis[x] only CodeableConcept
 * insert CodeableConceptRule(diagnosis.diagnosisCodeableConcept, 1..1, MS)
+* diagnosis.diagnosisCodeableConcept from 
 
 // Attachments (PDFs, Scans)
 * supportingInfo 0..* MS
