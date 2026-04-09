@@ -11,6 +11,8 @@ Description: "This profile defines constraints on the Coverage resource for use 
 * insert IdentifierRequiredRule(identifier, 1..*)
 
 * status 1..1 MS
+* type 0..1 MS
+* type from CoverageTypesVS
 
 * insert ReferenceRule(beneficiary, Patient, 1..1)
 
@@ -28,12 +30,29 @@ Description: "This profile defines constraints on the Coverage resource for use 
 
 * class.value 1..1 MS
 * class.name 0..1
+* class.type 1..1 MS
+* class.type from CoverageClassTypeVS
 
 * insert ReferenceRule(subscriber, Patient, 1..1)
 
 * insert CodeableConceptRule(relationship, 1..1, MS)
 
 * insert ReferenceRule(payor, Organization, 1..1)
+
+* costToBeneficiary 0..* MS
+* costToBeneficiary.type 0..1 MS
+* costToBeneficiary.exception 0..* MS
+* costToBeneficiary.exception.type 1..1 MS
+* paymentMethod 
+* memberStatus
+* planType
+* annualLimits
+* annualLimits.category
+* exclusion
+* preAuthExclusions
+* memberStatus
+* waiver
+* waiver.type
 
 
 Instance: EclaimsCoverageExample
