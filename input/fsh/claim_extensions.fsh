@@ -179,4 +179,4 @@ Id: attachment-type
 Title: "Attachment Type"
 Description: "Classifies the attachment (e.g. Discharge Summary, Final Bill)."
 * value[x] only CodeableConcept
-* valueCodeableConcept from https://fhir.sha.go.ke/fhir/ValueSet/attachment-type-vs (extensible)
+* valueCodeableConcept from https://fhir.sha.go.ke/fhir/ValueSet/attachment-type-vs (required)

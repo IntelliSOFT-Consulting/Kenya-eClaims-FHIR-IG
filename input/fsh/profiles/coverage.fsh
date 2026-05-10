@@ -10,78 +10,69 @@ Description: "This profile defines constraints on the Coverage resource for use 
 
 * insert IdentifierRequiredRule(identifier, 1..*)
 
+// Status
 * status 1..1 MS
+* status from http://hl7.org/fhir/ValueSet/fm-status (required)
 
-* insert ReferenceRule(beneficiary, Patient, 1..1)
+// Coverage type — bound to MOH-Kenya COVERAGE-TYPE ValueSet
+* type 0..1 MS
+* insert CodeableConceptRule(type, 0..1, MS)
+* type from CoverageTypeVS (required)
 
-* extension contains PaymentMethodExtension named paymentMethod 0..1 MS
-* extension contains MemberStatusExtension named memberStatus 0..1 MS
-* extension contains PlanTypeExtension named planType 0..1 MS
-* extension contains AnnualLimitsCategoryExtension named annualLimitsCategory 1..1 MS
-* extension contains ExclusionExtension named exclusion 0..* MS
-* extension contains PreAuthExclusionsExtension named preAuthExclusions 0..* MS
-* extension contains WaiverTypeExtension named waiverType 0..1 MS
+// Subscriber
+* insert ReferenceRule(subscriber, EClaimsPatient, 1..1)
 
+// Relationship of subscriber to beneficiary
+* relationship 1..1 MS
+* insert CodeableConceptRule(relationship, 1..1, MS)
+* relationship from http://hl7.org/fhir/ValueSet/subscriber-relationship (required)
 
+// Beneficiary
+* insert ReferenceRule(beneficiary, EClaimsPatient, 1..1)
 * beneficiary.reference 1..1
 * beneficiary.type 1..1
 
-
+// Period
 * period 0..1 MS
 * period.start 0..1
 * period.end 0..1
 
+// Payor
+* insert ReferenceRule(payor, EClaimsOrganization, 1..1)
 
+// Class — bound to MOH-Kenya COVERAGE-CLASS ValueSet
 * class 1..* MS
 * insert CodeableConceptRule(class.type, 1..1, MS)
-
+* class.type from CoverageClassVS (required)
 * class.value 1..1 MS
 * class.name 0..1
 
-* insert ReferenceRule(subscriber, Patient, 1..1)
+// Cost-to-beneficiary
+* costToBeneficiary 0..* MS
+* insert CodeableConceptRule(costToBeneficiary.type, 0..1, MS)
+* costToBeneficiary.type from http://hl7.org/fhir/ValueSet/coverage-copay-type (required)
+* costToBeneficiary.exception 0..* MS
+* insert CodeableConceptRule(costToBeneficiary.exception.type, 1..1, MS)
+* costToBeneficiary.exception.type from http://hl7.org/fhir/ValueSet/coverage-financial-exception (required)
 
-* insert CodeableConceptRule(relationship, 1..1, MS)
+// Extensions — bound to MOH-Kenya ValueSets
+* extension contains PaymentMethodExtension named paymentMethod 0..1 MS
+* extension[paymentMethod].valueCodeableConcept from PaymentMethodVS (required)
 
-* insert ReferenceRule(payor, Organization, 1..1)
+* extension contains MemberStatusExtension named memberStatus 0..1 MS
+* extension[memberStatus].valueCodeableConcept from CoverageMemberStatusVS (required)
 
+* extension contains PlanTypeExtension named planType 0..1 MS
+* extension[planType].valueCodeableConcept from CoveragePlanTypeVS (required)
 
+* extension contains AnnualLimitsCategoryExtension named annualLimitsCategory 1..1 MS
+* extension[annualLimitsCategory].valueCodeableConcept from http://hl7.org/fhir/ValueSet/service-category (required)
 
-// Instance: EclaimsCoverageExample
-// InstanceOf: EclaimsCoverage
-// Title: "Example SHA Coverage"
-// Description: "An example insurance coverage for a patient under the SHA scheme."
+* extension contains ExclusionExtension named exclusion 0..* MS
+* extension[exclusion].valueCodeableConcept from ExclusionVS (required)
 
+* extension contains PreAuthExclusionsExtension named preAuthExclusions 0..* MS
+* extension[preAuthExclusions].valueCodeableConcept from PreAuthExclusionsVS (required)
 
-// * id = "CR1569230130821-1-sha-coverage"
-
-// * meta.profile[0] = "https://fhir.sha.go.ke/fhir/StructureDefinition/eclaims-coverage"
-
-// * identifier[0].system = "https://fhir.sha.go.ke/fhir/Coverage"
-// * identifier[0].value = "CR1569230130821-SHA"
-
-
-// * status = #active
-
-// * beneficiary.reference = "Patient/CR1569230130821"
-// * beneficiary.type = "Patient"
-
-// * period.start = "2025-01-01"
-// * period.end = "2025-12-31"
-
-// * class[0].type.coding.system = "http://terminology.hl7.org/CodeSystem/coverage-class"
-// * class[0].type.coding.code = #group
-// * class[0].type.coding.display = "Group"
-
-// * class[0].value = "SHA-CIVIL-SERVANTS"
-// * class[0].name = "SHA Civil Servants Scheme"
-
-
-// * subscriber.reference = "Patient/CR1569230130821"
-
-
-// * relationship.coding.system = "http://terminology.hl7.org/CodeSystem/subscriber-relationship"
-// * relationship.coding.code = #self
-// * relationship.coding.display = "Self"
-
-
-// * payor[0].reference = "Organization/SHA"
+* extension contains WaiverTypeExtension named waiverType 0..1 MS
+* extension[waiverType].valueCodeableConcept from WaiverTypeVS (required)

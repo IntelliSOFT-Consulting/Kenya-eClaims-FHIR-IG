@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/COVERAGE-TYPE/\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/COVERAGE-CLASS/\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://ilm-hie.dha.go.ke/ocl/orgs/MOH-KENYA/ValueSet/PAYMENT-METHOD/\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' 'https://ilm-hie.dha.go.ke/fhir/ValueSet/COVERAGE-TYPE/$expand')",
+      "WebFetch(domain:ilm-hie.dha.go.ke)",
+      "Bash(sushi .)",
+      "WebFetch(domain:build.fhir.org)"
+    ]
+  }
+}
