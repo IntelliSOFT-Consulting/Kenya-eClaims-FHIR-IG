@@ -154,7 +154,7 @@ Extension: ItemCoverageReference
 Id: item-coverage-reference
 Title: "Item Coverage Reference"
 Description: "Link to the specific coverage/scheme applicable to this line item."
-* value[x] only Reference(eclaims-coverage)
+* value[x] only Reference(ke-eclaims-coverage)
 
 // Patient Invoice Extension
 Extension: PatientInvoice

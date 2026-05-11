@@ -1,6 +1,6 @@
 Profile: KenyaOpticalPreauth
 Parent: KenyaClaimBase
-Id: kenya-optical-preauth
+Id: ke-eclaims-opticalpreauth
 Title: "Optical Preauthorization"
 Description: """
 This profile is for Optical Services.

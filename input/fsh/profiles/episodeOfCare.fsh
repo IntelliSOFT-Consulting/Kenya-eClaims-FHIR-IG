@@ -1,6 +1,6 @@
 Profile: EClaimsEpisodeOfCare
 Parent: EpisodeOfCare
-Id: eclaims-episode-of-care
+Id: ke-eclaims-episodeofcare
 Title: "eClaims Episode of Care Profile"
 Description: "This profile defines constraints on the EpisodeOfCare resource for use within the Kenya eClaims Implementation Guide. It groups a set of related encounters and activities for a patient within a specific care program."
 

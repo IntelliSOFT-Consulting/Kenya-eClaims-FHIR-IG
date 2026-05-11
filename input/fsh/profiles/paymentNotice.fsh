@@ -1,6 +1,6 @@
 Profile: EClaimsPaymentNotice
 Parent: PaymentNotice
-Id: eclaims-payment-notice
+Id: ke-eclaims-paymentnotice
 Title: "eClaims Payment Notice Profile"
 Description: "This profile defines constraints on the PaymentNotice resource for use within the Kenya eClaims Implementation Guide. It provides notice of a payment-related event, such as the issuance or receipt of funds for a healthcare claim, supporting financial reconciliation and tracking."
 

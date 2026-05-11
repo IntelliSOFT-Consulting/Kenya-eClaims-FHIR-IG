@@ -1,6 +1,6 @@
 Profile: KenyaRenalPreauth
 Parent: KenyaClaimBase
-Id: kenya-renal-preauth
+Id: ke-eclaims-renalpreauth
 Title: "Renal Preauthorization"
 Description: """
 This profile is for requesting authorization for renal dialysis sessions.

@@ -51,7 +51,7 @@ A FHIR resource instance is conformant with this IG if and only if:
 
 A system claiming conformance as a **Healthcare Provider System** SHALL:
 
-- [ ] Generate FHIR `Claim` resources conformant with [KenyaClaimBase](StructureDefinition-kenya-claim-base.html) for all claim types.
+- [ ] Generate FHIR `Claim` resources conformant with [KenyaClaimBase](StructureDefinition-ke-eclaims-claimbase.html) for all claim types.
 - [ ] Generate `Claim` resources with `use = #preauthorization` for procedures requiring prior authorization.
 - [ ] Include a minimum conformant Bundle per the requirements in [Actors & Transactions](actors.html#fhir-bundle-structure).
 - [ ] Populate `Patient.identifier` with at least one identifier of type `SHA-NUMBER` or `NATIONAL-ID`.
@@ -67,9 +67,9 @@ A system claiming conformance as an **Insurer/Adjudication System** SHALL:
 
 - [ ] Accept FHIR `Claim` Bundles submitted via `POST /fhir/Bundle`.
 - [ ] Validate incoming `Claim` resources against this IG's profiles.
-- [ ] Return a valid `ClaimResponse` conformant with [EClaimsClaimResponse](StructureDefinition-eclaims-claim-response.html) for every accepted `Claim`.
+- [ ] Return a valid `ClaimResponse` conformant with [EClaimsClaimResponse](StructureDefinition-ke-eclaims-claimresponse.html) for every accepted `Claim`.
 - [ ] Return a FHIR `OperationOutcome` for rejected or invalid submissions.
-- [ ] Issue `PaymentNotice` resources conformant with [EClaimsPaymentNotice](StructureDefinition-eclaims-payment-notice.html) upon payment disbursement.
+- [ ] Issue `PaymentNotice` resources conformant with [EClaimsPaymentNotice](StructureDefinition-ke-eclaims-paymentnotice.html) upon payment disbursement.
 - [ ] Expose claim status via `GET /fhir/ClaimResponse?request={Claim.identifier}`.
 
 #### 4.3 Kenya HIE Gateway

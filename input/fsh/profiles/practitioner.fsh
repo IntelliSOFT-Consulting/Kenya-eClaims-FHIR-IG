@@ -1,6 +1,6 @@
 Profile: EClaimsPractitioner
 Parent: Practitioner
-Id: eclaims-practitioner
+Id: ke-eclaims-practitioner
 Title: "eClaims Practitioner Profile"
 Description: "This profile defines constraints on the Practitioner resource for use within the Kenya eClaims Implementation Guide. It represents a healthcare professional involved in claim processing or service delivery."
 

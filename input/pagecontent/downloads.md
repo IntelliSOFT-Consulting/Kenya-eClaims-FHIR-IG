@@ -59,7 +59,7 @@ java -jar validator_cli.jar \
   path/to/claim-bundle.json \
   -version 4.0.1 \
   -ig fhir.kenyaClaimsIG#0.1.0 \
-  -profile https://fhir.dha.go.ke/eclaims/StructureDefinition/kenya-claim-base
+  -profile https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-claimbase
 ```
 
 **Common validator flags:**

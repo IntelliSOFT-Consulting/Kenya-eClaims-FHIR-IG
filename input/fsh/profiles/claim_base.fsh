@@ -1,6 +1,6 @@
 Profile: KenyaClaimBase
 Parent: Claim
-Id: kenya-claim-base
+Id: ke-eclaims-claimbase
 Title: "Kenya eClaims Base Profile"
 Description: """
 This is the foundation for all Financial Claims and Preauthorizations in Kenya.
