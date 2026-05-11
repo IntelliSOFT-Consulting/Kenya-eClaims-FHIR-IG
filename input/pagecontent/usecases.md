@@ -28,13 +28,13 @@ This page describes the primary business use cases supported by the Kenya eClaim
 
 | Resource | Profile | Role |
 |---|---|---|
-| `Claim` | [KenyaClaimBase](StructureDefinition-kenya-claim-base.html) | The submitted claim |
-| `Patient` | [EClaimsPatient](StructureDefinition-eclaims-patient.html) | Insured patient |
-| `Coverage` | [EclaimsCoverage](StructureDefinition-eclaims-coverage.html) | Insurance coverage details |
-| `Encounter` | [EClaimsEncounter](StructureDefinition-eclaims-encounter.html) | The service encounter |
-| `Condition` | [EClaimsCondition](StructureDefinition-eclaims-condition.html) | Diagnosis at encounter |
-| `Organization` | [EClaimsOrganization](StructureDefinition-eclaims-organization.html) | Provider and insurer |
-| `ClaimResponse` | [EClaimsClaimResponse](StructureDefinition-eclaims-claim-response.html) | Adjudication result |
+| `Claim` | [KenyaClaimBase](StructureDefinition-ke-eclaims-claimbase.html) | The submitted claim |
+| `Patient` | [EClaimsPatient](StructureDefinition-ke-eclaims-patient.html) | Insured patient |
+| `Coverage` | [EclaimsCoverage](StructureDefinition-ke-eclaims-coverage.html) | Insurance coverage details |
+| `Encounter` | [EClaimsEncounter](StructureDefinition-ke-eclaims-encounter.html) | The service encounter |
+| `Condition` | [EClaimsCondition](StructureDefinition-ke-eclaims-condition.html) | Diagnosis at encounter |
+| `Organization` | [EClaimsOrganization](StructureDefinition-ke-eclaims-organization.html) | Provider and insurer |
+| `ClaimResponse` | [EClaimsClaimResponse](StructureDefinition-ke-eclaims-claimresponse.html) | Adjudication result |
 
 ---
 
@@ -60,12 +60,12 @@ This page describes the primary business use cases supported by the Kenya eClaim
 
 | Resource | Profile | Role |
 |---|---|---|
-| `Claim` (use=preauthorization) | [KenyaClaimBase](StructureDefinition-kenya-claim-base.html) | Preauth request |
-| `Claim` (surgical) | [KenyaSurgicalPreauth](StructureDefinition-kenya-surgical-preauth.html) | Surgical preauth |
-| `Claim` (oncology) | [KenyaOncologyPreauth](StructureDefinition-kenya-oncology-preauth.html) | Oncology preauth |
-| `Claim` (renal) | [KenyaRenalPreauth](StructureDefinition-kenya-renal-preauth.html) | Renal preauth |
-| `Claim` (imaging) | [KenyaImagingPreauth](StructureDefinition-kenya-imaging-preauth.html) | Imaging preauth |
-| `Claim` (optical) | [KenyaOpticalPreauth](StructureDefinition-kenya-optical-preauth.html) | Optical preauth |
+| `Claim` (use=preauthorization) | [KenyaClaimBase](StructureDefinition-ke-eclaims-claimbase.html) | Preauth request |
+| `Claim` (surgical) | [KenyaSurgicalPreauth](StructureDefinition-ke-eclaims-surgicalpreauth.html) | Surgical preauth |
+| `Claim` (oncology) | [KenyaOncologyPreauth](StructureDefinition-ke-eclaims-oncologypreauth.html) | Oncology preauth |
+| `Claim` (renal) | [KenyaRenalPreauth](StructureDefinition-ke-eclaims-renalpreauth.html) | Renal preauth |
+| `Claim` (imaging) | [KenyaImagingPreauth](StructureDefinition-ke-eclaims-imagingpreauth.html) | Imaging preauth |
+| `Claim` (optical) | [KenyaOpticalPreauth](StructureDefinition-ke-eclaims-opticalpreauth.html) | Optical preauth |
 
 ---
 
@@ -91,9 +91,9 @@ This page describes the primary business use cases supported by the Kenya eClaim
 
 | Resource | Profile | Role |
 |---|---|---|
-| `MedicationRequest` | [EClaimsMedicationRequest](StructureDefinition-eclaims-medication-request.html) | The prescription |
-| `MedicationDispense` | [EClaimsMedicationDispense](StructureDefinition-eclaims-medication-dispense.html) | Dispensing record |
-| `MedicationStatement` | [EClaimsMedicationStatement](StructureDefinition-eclaims-medication-statement.html) | Patient medication history |
+| `MedicationRequest` | [EClaimsMedicationRequest](StructureDefinition-ke-eclaims-medicationrequest.html) | The prescription |
+| `MedicationDispense` | [EClaimsMedicationDispense](StructureDefinition-ke-eclaims-medicationdispense.html) | Dispensing record |
+| `MedicationStatement` | [EClaimsMedicationStatement](StructureDefinition-ke-eclaims-medicationstatement.html) | Patient medication history |
 
 ---
 
@@ -119,9 +119,9 @@ This page describes the primary business use cases supported by the Kenya eClaim
 
 | Resource | Profile | Role |
 |---|---|---|
-| `EpisodeOfCare` | [EClaimsEpisodeOfCare](StructureDefinition-eclaims-episode-of-care.html) | Admission grouper |
-| `DiagnosticReport` | [EClaimsDiagnosticReport](StructureDefinition-eclaims-diagnostic-report.html) | Lab/radiology results |
-| `Claim` (institutional) | [KenyaClaimSubmission](StructureDefinition-kenya-claim-submission.html) | Final claim submission |
+| `EpisodeOfCare` | [EClaimsEpisodeOfCare](StructureDefinition-ke-eclaims-episodeofcare.html) | Admission grouper |
+| `DiagnosticReport` | [EClaimsDiagnosticReport](StructureDefinition-ke-eclaims-diagnosticreport.html) | Lab/radiology results |
+| `Claim` (institutional) | [KenyaClaimSubmission](StructureDefinition-ke-eclaims-claimsubmission.html) | Final claim submission |
 
 ---
 
@@ -155,4 +155,4 @@ This page describes the primary business use cases supported by the Kenya eClaim
 
 | Resource | Profile | Role |
 |---|---|---|
-| `PaymentNotice` | [EClaimsPaymentNotice](StructureDefinition-eclaims-payment-notice.html) | Payment notification |
+| `PaymentNotice` | [EClaimsPaymentNotice](StructureDefinition-ke-eclaims-paymentnotice.html) | Payment notification |

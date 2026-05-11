@@ -1,6 +1,6 @@
 Profile: EClaimsEncounter
 Parent: Encounter
-Id: eclaims-encounter
+Id: ke-eclaims-encounter
 Title: "eClaims Encounter Profile"
 Description: "This profile defines constraints on the Encounter resource for use within the Kenya eClaims Implementation Guide. It captures the healthcare interaction during which services are rendered and claims are generated."
 

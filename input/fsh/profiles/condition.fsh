@@ -1,6 +1,6 @@
 Profile: EClaimsCondition
 Parent: Condition
-Id: eclaims-condition
+Id: ke-eclaims-condition
 Title: "eClaims Condition/Diagnosis Profile"
 Description: "This profile defines constraints on the Condition resource for use within the Kenya eClaims Implementation Guide. It represents a clinical diagnosis or problem associated with a patient's healthcare encounter."
 

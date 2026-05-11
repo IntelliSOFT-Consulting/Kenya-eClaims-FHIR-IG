@@ -1,6 +1,6 @@
 Profile: EClaimsDiagnosticReport
 Parent: DiagnosticReport
-Id: eclaims-diagnostic-report
+Id: ke-eclaims-diagnosticreport
 Title: "eClaims Diagnostic Report Profile"
 Description: "This profile defines constraints on the DiagnosticReport resource for use within the Kenya eClaims Implementation Guide. It represents findings from diagnostic tests (lab, radiology, pathology) associated with a claim."
 

@@ -1,6 +1,6 @@
 Profile: EClaimsPatient
 Parent: Patient
-Id: eclaims-patient
+Id: ke-eclaims-patient
 Title: "eClaims Patient Profile"
 Description: "This profile defines constraints on the Patient resource for use within the Kenya eClaims Implementation Guide. It represents a patient receiving healthcare services under the national insurance scheme."
 

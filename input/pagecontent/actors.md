@@ -21,11 +21,11 @@ This page describes the system actors participating in the Kenya eClaims ecosyst
 - Receive `PaymentNotice` and reconcile against accounts receivable
 
 **Must support profiles:**
-- [EClaimsPatient](StructureDefinition-eclaims-patient.html)
-- [EClaimsEncounter](StructureDefinition-eclaims-encounter.html)
-- [EClaimsCondition](StructureDefinition-eclaims-condition.html)
-- [EclaimsCoverage](StructureDefinition-eclaims-coverage.html)
-- [KenyaClaimBase](StructureDefinition-kenya-claim-base.html) / [KenyaClaimSubmission](StructureDefinition-kenya-claim-submission.html)
+- [EClaimsPatient](StructureDefinition-ke-eclaims-patient.html)
+- [EClaimsEncounter](StructureDefinition-ke-eclaims-encounter.html)
+- [EClaimsCondition](StructureDefinition-ke-eclaims-condition.html)
+- [EclaimsCoverage](StructureDefinition-ke-eclaims-coverage.html)
+- [KenyaClaimBase](StructureDefinition-ke-eclaims-claimbase.html) / [KenyaClaimSubmission](StructureDefinition-ke-eclaims-claimsubmission.html)
 
 ---
 
@@ -61,8 +61,8 @@ This page describes the system actors participating in the Kenya eClaims ecosyst
 - Issue `PaymentNotice` resources upon payment disbursement
 
 **Must support profiles:**
-- [EClaimsClaimResponse](StructureDefinition-eclaims-claim-response.html)
-- [EClaimsPaymentNotice](StructureDefinition-eclaims-payment-notice.html)
+- [EClaimsClaimResponse](StructureDefinition-ke-eclaims-claimresponse.html)
+- [EClaimsPaymentNotice](StructureDefinition-ke-eclaims-paymentnotice.html)
 
 ---
 

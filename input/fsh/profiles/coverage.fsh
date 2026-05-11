@@ -1,6 +1,6 @@
 Profile: EclaimsCoverage
 Parent: Coverage
-Id: eclaims-coverage
+Id: ke-eclaims-coverage
 Title: "Coverage Profile"
 Description: "This profile defines constraints on the Coverage resource for use within the Kenya eClaims Implementation Guide. It represents insurance coverage for a patient under a specific insurance scheme, including SHA and specialised schemes such as POMF and POMF_TEACHERS."
 

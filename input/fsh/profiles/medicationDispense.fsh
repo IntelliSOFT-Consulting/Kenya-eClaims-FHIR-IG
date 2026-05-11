@@ -1,6 +1,6 @@
 Profile: EClaimsMedicationDispense
 Parent: MedicationDispense
-Id: eclaims-medication-dispense
+Id: ke-eclaims-medicationdispense
 Title: "eClaims Medication Dispense Profile"
 Description: "This profile defines constraints on the MedicationDispense resource for use within the Kenya eClaims Implementation Guide. It represents the dispensing of a medication to a patient."
 

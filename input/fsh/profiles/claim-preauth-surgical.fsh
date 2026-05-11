@@ -1,6 +1,6 @@
 Profile: KenyaSurgicalPreauth
 Parent: KenyaClaimBase
-Id: kenya-surgical-preauth
+Id: ke-eclaims-surgicalpreauth
 Title: "Surgical Preauthorization"
 Description: """
 This profile covers invasive procedures requiring a theatre or sterile setting.

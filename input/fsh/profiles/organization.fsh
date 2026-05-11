@@ -1,6 +1,6 @@
 Profile: EClaimsOrganization
 Parent: Organization
-Id: eclaims-organization
+Id: ke-eclaims-organization
 Title: "eClaims Organization Profile"
 Description: "This profile defines constraints on the Organization resource for use within the Kenya eClaims Implementation Guide. It represents healthcare providers, insurers, and other organizations involved in claim processing."
 

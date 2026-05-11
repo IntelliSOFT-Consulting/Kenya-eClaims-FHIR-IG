@@ -1,6 +1,6 @@
 Profile: EclaimsResponse
 Parent: Claim
-Id: eclaims-claim
+Id: ke-eclaims-claim
 Title: "Claim Response - Preauthorization"
 Description: "This profile defines constraints on the Claim resource for use within the Kenya eClaims Implementation Guide. It supports institutional claims with detailed clinical, financial, insurance, and adjudication metadata."
 
@@ -133,7 +133,7 @@ Title: "Example Claim Response"
 Description: "An example Claim Response resource for Kenya eClaims Preauthorization, fully populated for testing."
 
 * id = "CR-00001"
-* meta.profile[0] = "http://fhir.sha.go.ke/fhir/StructureDefinition/eclaims-claim"
+* meta.profile[0] = "http://fhir.sha.go.ke/fhir/StructureDefinition/ke-eclaims-claim"
 
 * identifier[0].system = "http://fhir.sha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-00001"

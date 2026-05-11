@@ -1,6 +1,6 @@
 Profile: EClaimsClaimResponse
 Parent: ClaimResponse
-Id: eClaims-claim-response
+Id: ke-eclaims-claimresponse
 Title: "Kenya eClaims ClaimResponse Profile"
 Description: "Profile for the response to a Claim or Preauthorization, including specific adjudication states and expiry logic."
 

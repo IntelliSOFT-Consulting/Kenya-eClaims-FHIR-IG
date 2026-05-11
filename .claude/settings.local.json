@@ -8,7 +8,12 @@
       "Bash(curl -s -o /dev/null -w '%{http_code}' 'https://ilm-hie.dha.go.ke/fhir/ValueSet/COVERAGE-TYPE/$expand')",
       "WebFetch(domain:ilm-hie.dha.go.ke)",
       "Bash(sushi .)",
-      "WebFetch(domain:build.fhir.org)"
+      "WebFetch(domain:build.fhir.org)",
+      "Bash(rm -rf /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/temp /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/output /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/fsh-generated && echo \"Cleaned.\")",
+      "Bash(bash _genonce.sh)"
+    ],
+    "additionalDirectories": [
+      "/Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/temp"
     ]
   }
 }

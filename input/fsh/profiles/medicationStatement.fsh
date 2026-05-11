@@ -1,6 +1,6 @@
 Profile: EClaimsMedicationStatement
 Parent: MedicationStatement
-Id: eclaims-medication-statement
+Id: ke-eclaims-medicationstatement
 Title: "eClaims Medication Statement Profile"
 Description: "This profile defines constraints on the MedicationStatement resource for use within the Kenya eClaims Implementation Guide. It records information about a medication being taken by a patient."
 

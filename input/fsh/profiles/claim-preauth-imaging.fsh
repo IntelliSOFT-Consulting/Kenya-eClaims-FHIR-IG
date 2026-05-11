@@ -1,6 +1,6 @@
 Profile: KenyaImagingPreauth
 Parent: KenyaClaimBase
-Id: kenya-imaging-preauth
+Id: ke-eclaims-imagingpreauth
 Title: "Imaging Preauthorization"
 Description: """
 This profile is for authorizing high-cost Diagnostic Imaging.
