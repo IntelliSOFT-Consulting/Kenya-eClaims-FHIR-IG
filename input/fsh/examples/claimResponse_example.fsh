@@ -11,9 +11,9 @@ Description: "An example of a ClaimResponse returned to the provider for surveil
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * created = "2025-10-07T18:47:22+00:00"
 
-* extension[claimState].valueCodeableConcept.coding.system = "https://fhir.sha.go.ke/fhir/CodeSystem/claim-state"
+* extension[claimState].valueCodeableConcept.coding.system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-state-cs"
 * extension[claimState].valueCodeableConcept.coding.code = #sent-back
-* extension[claimState].valueCodeableConcept.coding.display = "Returned Back"
+* extension[claimState].valueCodeableConcept.coding.display = "Sent Back"
 
 * patient = Reference(Patient/example) 
 * insurer = Reference(Organization/sha-insurer)

@@ -10,7 +10,14 @@
       "Bash(sushi .)",
       "WebFetch(domain:build.fhir.org)",
       "Bash(rm -rf /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/temp /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/output /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/fsh-generated && echo \"Cleaned.\")",
-      "Bash(bash _genonce.sh)"
+      "Bash(bash _genonce.sh)",
+      "Bash(python3 -c ' *)",
+      "Bash(grep -E \"\\\\.xhtml$\")",
+      "Bash(java -version)",
+      "Bash(java -jar input-cache/publisher.jar -ig ig.ini)",
+      "Bash(npx fsh-sushi *)",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)"
     ],
     "additionalDirectories": [
       "/Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/temp"

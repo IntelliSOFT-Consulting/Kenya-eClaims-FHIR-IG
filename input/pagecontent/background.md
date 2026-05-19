@@ -103,3 +103,27 @@ This IG aligns with the following international standards and frameworks:
 | **SHA Interventions Catalogue** | Service codes used in `Claim.item.productOrService` |
 
 SNOMED CT is **not used** in this IG. All coded elements that would typically reference SNOMED CT (e.g., body sites, medication administration methods, clinical findings) are bound to local Kenya-specific code systems or HL7 terminology equivalents.
+
+---
+
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+---
+
+### Cross-Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+---
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+---
+
+### IP Statements
+
+{% include ip-statements.xhtml %}

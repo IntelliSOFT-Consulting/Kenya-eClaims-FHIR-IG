@@ -4,6 +4,8 @@ Title: "Exclusion Code System"
 Description: "A code system that defines Exclusion"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
 
 * #COSMETIC "Cosmetic"
 * #EXPERIMENTAL "Experimental"
@@ -19,6 +21,8 @@ Title: "PreAuthExclusions Code System"
 Description: "A code system that defines PreAuth Exclusions"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
 
 * #EMERGENCY "Emergency"
 * #PRIMARY-CARE "Primary Care"
@@ -32,6 +36,8 @@ Title: "Waiver Type Code System"
 Description: "A code system that defines Waiver Type"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
 
 * #WAITING-PERIOD "Waiting Period"
 * #REFERRAL "Referral"
@@ -44,6 +50,8 @@ Title: "Subsite Code System"
 Description: "A code system that defines Subsite"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
 
 * #mms "ICD-11 for Mortality and Morbidity Statistics"
 * #1630407678 "Neoplasms"
@@ -1052,6 +1060,8 @@ Title: "Subsite Code System"
 Description: "A code system that defines Subsite"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
 * #LEFT "Left"
 * #RIGHT "Right"
 * #BILATERAL "Bilateral"
@@ -1063,6 +1073,8 @@ Title: "BodySite Code System"
 Description: "A code system that defines categories for Institutional Body Sites"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
 
 * #HEAD "Head"
 * #CHEST "Chest"
@@ -1076,6 +1088,8 @@ Title: "Condition Category Code System"
 Description: "A code system that defines categories for Social Health Authority Interventions"
 * ^status = #active
 * ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
 * #ORG-00001-CPT-0004354 "Benefits Chapter"
 * #ORG-00001-CPT-0004355 "Interventions Chapter"
 * #ORG-00001-CPT-0004356 "Sub-Benefits Chapter"
@@ -2076,3 +2090,22 @@ Description: "A code system that defines categories for Social Health Authority 
 * #SHA-05-031 "Spectacle magnifiers (lenses + budget frame) 8"
 * #SHA-19-630 "Specular Microscopy"
 * #SHA-15-004 "Speech-Language Therapy"
+
+
+CodeSystem: AttachmentTypeCS
+Id: attachment-type-cs
+Title: "Attachment Type Code System"
+Description: "Codes classifying the type of attachment submitted with a claim (e.g. Discharge Summary, Final Bill)."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #DISCHARGE-SUMMARY "Discharge Summary"
+* #FINAL-BILL "Final Bill"
+* #LAB-REPORT "Laboratory Report"
+* #IMAGING-REPORT "Imaging Report"
+* #REFERRAL-LETTER "Referral Letter"
+* #OPERATION-NOTES "Operation Notes"
+* #PRESCRIPTION "Prescription"
+* #CONSENT-FORM "Consent Form"
+* #OTHER "Other"

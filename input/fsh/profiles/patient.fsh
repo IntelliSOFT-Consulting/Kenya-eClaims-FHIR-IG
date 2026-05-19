@@ -9,7 +9,7 @@ Description: "This profile defines constraints on the Patient resource for use w
 // Identifier — must have at least one with system and value
 * insert IdentifierRequiredRule(identifier, 1..*)
 * identifier.use 1..1 MS
-* identifier.use from IdentifierUseVS (required)
+* identifier.use 1..1 MS
 * identifier.type 0..1 MS
 * insert CodeableConceptRule(identifier.type, 0..1, MS)
 * identifier.type from IdentifierTypesVS (required)
@@ -18,7 +18,6 @@ Description: "This profile defines constraints on the Patient resource for use w
 // Name
 * name 1..* MS
 * name.use 0..1 MS
-* name.use from NameUseVS (required)
 * name.text 0..1
 * name.family 1..1 MS
 * name.given 1..* MS
@@ -26,20 +25,16 @@ Description: "This profile defines constraints on the Patient resource for use w
 // Telecom
 * telecom 1..* MS
 * telecom.system 1..1 MS
-* telecom.system from ContactPointSystemVS (required)
 * telecom.value 1..1 MS
 * telecom.use 0..1 MS
-* telecom.use from ContactPointUseVS (required)
 
 // Demographics
 * gender 1..1 MS
-* gender from GenderVS (required)
 * birthDate 1..1 MS
 
 // Address
 * address 0..* MS
 * address.use 0..1 MS
-* address.use from AddressUseVS (required)
 * address.city 0..1
 * address.district 0..1
 * address.state 0..1

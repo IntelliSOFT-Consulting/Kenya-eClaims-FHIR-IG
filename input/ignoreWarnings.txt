@@ -1,5 +1,19 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# Base FHIR elements that bind to experimental value sets (fundsReserve, payee.type)
+# These are standard FHIR R4 base bindings that cannot be changed without overriding the binding
+The definition for the element 'Claim.fundsReserve' binds to the value set 'http://hl7.org/fhir/ValueSet/fundsreserve' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Claim.payee.type' binds to the value set 'http://hl7.org/fhir/ValueSet/payeetype' which is experimental, but this structure is not labeled as experimental
+
+# No examples for profiles/extensions - this IG is in CI-Build draft status
+The Implementation Guide contains no examples for this extension
+The Implementation Guide contains no examples for this profile
+
+# MustSupport slice warning for medication dispense
+The slice 'asNeededCodeableConcept' on path 'MedicationDispense.dosageInstruction.asNeeded[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+
+# ICD-11 is an external terminology not loaded in the IG validator
+A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be found, so the code cannot be validated
+
+# Kenya eClaims identifier NamingSystem - this is a local identifier system
+No definition could be found for URL value 'https://fhir.dha.go.ke/eclaims/Identifier/claim-number'

@@ -12,5 +12,5 @@ This is the final request for payment sent after services are delivered.
 
 * related 0..* MS
 * related.relationship 1..1 MS
-* related.relationship = https://fhir.sha.go.ke/fhir/CodeSystem/claim-relation-type#pre-auth
+* related.relationship = https://fhir.dha.go.ke/eclaims/CodeSystem/related-claim-relationship-cs#PRIOR
 * related.claim 1..1 MS
