@@ -11,7 +11,7 @@ Description: "This profile defines constraints on the Encounter resource for use
 
 // Status
 * status 1..1 MS
-* status from EncounterStatusVS (required)
+* status 1..1 MS
 
 // Class
 * class 1..1 MS

@@ -8,12 +8,10 @@ Description: "This profile defines constraints on the EpisodeOfCare resource for
 
 // Status
 * status 1..1 MS
-* status from EpisodeOfCareStatusVS (required)
 
 // Status history
 * statusHistory 0..* MS
 * statusHistory.status 1..1 MS
-* statusHistory.status from EpisodeOfCareStatusVS (required)
 * statusHistory.period 1..1 MS
 
 // Type

@@ -12,12 +12,11 @@ Description: "This profile defines constraints on the Condition resource for use
 // Clinical status — required, bound to MOH-Kenya ValueSet
 * clinicalStatus 1..1 MS
 * insert CodeableConceptRule(clinicalStatus, 1..1, MS)
-* clinicalStatus from ConditionClinicalStatusVS (required)
+* clinicalStatus 1..1 MS
 
 // Verification status — required, bound to MOH-Kenya ValueSet
 * verificationStatus 1..1 MS
 * insert CodeableConceptRule(verificationStatus, 1..1, MS)
-* verificationStatus from ConditionVerificationStatusVS (required)
 
 // Category — required
 * category 1..* MS

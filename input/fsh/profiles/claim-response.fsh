@@ -133,20 +133,20 @@ Title: "Example Claim Response"
 Description: "An example Claim Response resource for Kenya eClaims Preauthorization, fully populated for testing."
 
 * id = "CR-00001"
-* meta.profile[0] = "http://fhir.sha.go.ke/fhir/StructureDefinition/ke-eclaims-claim"
+* meta.profile[0] = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-claim"
 
-* identifier[0].system = "http://fhir.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/eclaims/Identifier/claim-number"
 * identifier[0].value = "CLAIM-00001"
 
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "http://fhir.sha.go.ke/fhir/CodeSystem/claim-type"
+* type.coding[0].system = "http://terminology.hl7.org/CodeSystem/claim-type"
 * type.coding[0].code = #institutional
-* type.coding[0].display = "Institutional Claim"
+* type.coding[0].display = "Institutional"
 
-* subType.coding[0].system = "http://fhir.sha.go.ke/fhir/CodeSystem/claim-subtype"
-* subType.coding[0].code = #inpatient
+* subType.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-subtype-cs"
+* subType.coding[0].code = #INPATIENT
 * subType.coding[0].display = "Inpatient"
 
 * patient = Reference(Patient/PT-0001)
@@ -159,15 +159,15 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * created = "2025-12-16T12:00:00+03:00"
 
 * priority.coding[0].system = "http://terminology.hl7.org/CodeSystem/processpriority"
-* priority.coding[0].code = #routine
-* priority.coding[0].display = "Routine"
+* priority.coding[0].code = #normal
+* priority.coding[0].display = "Normal"
 
 * related[0].claim = Reference(Claim/CLAIM-0000X)
-* related[0].relationship.coding[0].system = "http://fhir.sha.go.ke/fhir/CodeSystem/claim-relation-type"
-* related[0].relationship.coding[0].code = #claim
-* related[0].relationship.coding[0].display = "Claim"
+* related[0].relationship.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/related-claim-relationship-cs"
+* related[0].relationship.coding[0].code = #ASSOCIATED
+* related[0].relationship.coding[0].display = "Associated"
 
-* payee.type.coding[0].system = "http://fhir.sha.go.ke/fhir/CodeSystem/payee-type"
+* payee.type.coding[0].system = "http://terminology.hl7.org/CodeSystem/payeetype"
 * payee.type.coding[0].code = #provider
 * payee.type.coding[0].display = "Provider"
 
@@ -180,21 +180,21 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * careTeam[0].role.coding[0].system = "http://terminology.hl7.org/CodeSystem/claimcareteamrole"
 * careTeam[0].role.coding[0].code = #primary
 * careTeam[0].role.coding[0].display = "Primary Provider"
-* careTeam[0].qualification.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0360/2.7"
+* careTeam[0].qualification.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0360"
 * careTeam[0].qualification.coding[0].code = #MD
-* careTeam[0].qualification.coding[0].display = "Medical Doctor"
+* careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 
 * supportingInfo[0].sequence = 1
 * supportingInfo[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/claiminformationcategory"
 * supportingInfo[0].category.coding[0].code = #attachment
 * supportingInfo[0].category.coding[0].display = "Attachment"
-* supportingInfo[0].valueAttachment.contentType = #application-pdf
+* supportingInfo[0].valueAttachment.contentType = #application/pdf
 * supportingInfo[0].valueAttachment.url = "https://api-edi.provider.sha.go.ke/media/claim/CHURCHILL_X-RAY.pdf"
 * supportingInfo[0].valueAttachment.title = "CHURCHILL X-RAY"
 * supportingInfo[0].valueAttachment.creation = "2025-11-29T15:17:07+03:00"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.sha.go.ke/fhir/terminology/CodeSystem/icd-11"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "http://id.who.int/icd/release/11/mms"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #NC72.5
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Fracture of shaft of femur"
 * diagnosis[0].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
@@ -209,7 +209,7 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * referral = Reference(ServiceRequest/SRV-0001)
 
 * item[0].sequence = 1
-* item[0].productOrService.coding[0].system = "https://fhir.sha.go.ke/fhir/CodeSystem/intervention-codes"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-19-444
 * item[0].productOrService.coding[0].display = "Open reduction and internal fixation: Femur"
 * item[0].quantity.value = 1
