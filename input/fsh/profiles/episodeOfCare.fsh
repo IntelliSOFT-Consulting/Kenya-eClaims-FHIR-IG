@@ -8,10 +8,12 @@ Description: "This profile defines constraints on the EpisodeOfCare resource for
 
 // Status
 * status 1..1 MS
+* status from http://hl7.org/fhir/ValueSet/episode-of-care-status (required)
 
 // Status history
 * statusHistory 0..* MS
 * statusHistory.status 1..1 MS
+* statusHistory.status from http://hl7.org/fhir/ValueSet/episode-of-care-status (required)
 * statusHistory.period 1..1 MS
 
 // Type

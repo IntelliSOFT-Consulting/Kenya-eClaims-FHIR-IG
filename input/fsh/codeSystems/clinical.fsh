@@ -2,33 +2,33 @@
 CodeSystem: ConditionClinicalStatusCS
 Id: condition-clinical-status-cs
 Title: "Condition Clinical Status Code System"
-Description: "Codes for the clinical status of a condition (MOH-Kenya OCL: CONDITION-CLINICAL-STATUS)"
+Description: "Codes for the clinical status of a condition. Codes align with FHIR condition-clinical to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #ACTIVE "Active"
-* #RECURRENCE "Recurrence"
-* #RELAPSE "Relapse"
-* #INACTIVE "Inactive"
-* #REMISSION "Remission"
-* #RESOLVED "Resolved"
+* #active "Active"
+* #recurrence "Recurrence"
+* #relapse "Relapse"
+* #inactive "Inactive"
+* #remission "Remission"
+* #resolved "Resolved"
 
 
 CodeSystem: ConditionVerificationStatusCS
 Id: condition-verification-status-cs
 Title: "Condition Verification Status Code System"
-Description: "Codes for the verification status of a condition (MOH-Kenya OCL: CONDITION-VERIFICATION-STATUS)"
+Description: "Codes for the verification status of a condition. Codes align with FHIR condition-ver-status to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #UNCONFIRMED "Unconfirmed"
-* #PROVISIONAL "Provisional"
-* #DIFFERENTIAL "Differential"
-* #CONFIRMED "Confirmed"
-* #REFUTED "Refuted"
-* #ENTERED-IN-ERROR "Entered in Error"
+* #unconfirmed "Unconfirmed"
+* #provisional "Provisional"
+* #differential "Differential"
+* #confirmed "Confirmed"
+* #refuted "Refuted"
+* #entered-in-error "Entered in Error"
 
 
 CodeSystem: ConditionCategoryCS
@@ -57,37 +57,37 @@ Description: "Local codes for conditions/diagnoses (MOH-Kenya: CONDITION-CODES)"
 CodeSystem: EncounterStatusCS
 Id: encounter-status-cs
 Title: "Encounter Status Code System"
-Description: "Codes for the status of an encounter (MOH-Kenya OCL: ENCOUNTER-STATUS)"
+Description: "Codes for the status of an encounter. Codes align with FHIR encounter-status to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #PLANNED "Planned"
-* #ARRIVED "Arrived"
-* #TRIAGED "Triaged"
-* #IN-PROGRESS "In Progress"
-* #ON-LEAVE "On Leave"
-* #FINISHED "Finished"
-* #CANCELLED "Cancelled"
-* #ENTERED-IN-ERROR "Entered in Error"
-* #UNKNOWN "Unknown"
+* #planned "Planned"
+* #arrived "Arrived"
+* #triaged "Triaged"
+* #in-progress "In Progress"
+* #onleave "On Leave"
+* #finished "Finished"
+* #cancelled "Cancelled"
+* #entered-in-error "Entered in Error"
+* #unknown "Unknown"
 
 
 CodeSystem: EpisodeOfCareStatusCS
 Id: episode-of-care-status-cs
 Title: "Episode of Care Status Code System"
-Description: "Codes for the status of an episode of care (MOH-Kenya OCL: EPISODE-OF-CARE-STATUS)"
+Description: "Codes for the status of an episode of care. Codes align with FHIR episode-of-care-status to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #PLANNED "Planned"
-* #WAITLIST "Waitlist"
-* #ACTIVE "Active"
-* #ON-HOLD "On Hold"
-* #FINISHED "Finished"
-* #CANCELLED "Cancelled"
-* #ENTERED-IN-ERROR "Entered in Error"
+* #planned "Planned"
+* #waitlist "Waitlist"
+* #active "Active"
+* #onhold "On Hold"
+* #finished "Finished"
+* #cancelled "Cancelled"
+* #entered-in-error "Entered in Error"
 
 
 CodeSystem: EpisodeOfCareTypeCS

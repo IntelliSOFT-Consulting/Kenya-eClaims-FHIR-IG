@@ -11,12 +11,16 @@ used across the entire eClaims ecosystem.
 // Identifiers & Metadata
 * insert IdentifierRequiredRule(identifier, 1..*)
 * status 1..1 MS
+* status from http://hl7.org/fhir/ValueSet/fm-status (required)
 
 * use 1..1 MS
+* use from http://hl7.org/fhir/ValueSet/claim-use (required)
 
 * insert CodeableConceptRule(type, 1..1, MS)
+* type from ClaimTypeVS (required)
 
 * insert CodeableConceptRule(subType, 0..1, MS)
+* subType from ClaimSubTypeVS (required)
 
 * insert CodeableConceptRule(priority, 1..1, MS)
 * priority from http://hl7.org/fhir/ValueSet/process-priority (required)
