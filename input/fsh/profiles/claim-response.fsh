@@ -146,7 +146,7 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * type.coding[0].display = "Institutional"
 
 * subType.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-subtype-cs"
-* subType.coding[0].code = #INPATIENT
+* subType.coding[0].code = #inpatient
 * subType.coding[0].display = "Inpatient"
 
 * patient = Reference(Patient/PT-0001)
@@ -164,7 +164,7 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 
 * related[0].claim = Reference(Claim/CLAIM-0000X)
 * related[0].relationship.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/related-claim-relationship-cs"
-* related[0].relationship.coding[0].code = #ASSOCIATED
+* related[0].relationship.coding[0].code = #associated
 * related[0].relationship.coding[0].display = "Associated"
 
 * payee.type.coding[0].system = "http://terminology.hl7.org/CodeSystem/payeetype"

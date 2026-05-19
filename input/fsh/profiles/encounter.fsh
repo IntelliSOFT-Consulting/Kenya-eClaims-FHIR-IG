@@ -11,7 +11,7 @@ Description: "This profile defines constraints on the Encounter resource for use
 
 // Status
 * status 1..1 MS
-* status 1..1 MS
+* status from http://hl7.org/fhir/ValueSet/encounter-status (required)
 
 // Class
 * class 1..1 MS

@@ -15,5 +15,5 @@ The slice 'asNeededCodeableConcept' on path 'MedicationDispense.dosageInstructio
 # ICD-11 is an external terminology not loaded in the IG validator
 A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be found, so the code cannot be validated
 
-# Kenya eClaims identifier NamingSystem - this is a local identifier system
+# Kenya eClaims identifier NamingSystem — local identifier system, no NamingSystem resource needed
 No definition could be found for URL value 'https://fhir.dha.go.ke/eclaims/Identifier/claim-number'

@@ -12,11 +12,12 @@ Description: "This profile defines constraints on the Condition resource for use
 // Clinical status — required, bound to MOH-Kenya ValueSet
 * clinicalStatus 1..1 MS
 * insert CodeableConceptRule(clinicalStatus, 1..1, MS)
-* clinicalStatus 1..1 MS
+* clinicalStatus from http://hl7.org/fhir/ValueSet/condition-clinical (required)
 
-// Verification status — required, bound to MOH-Kenya ValueSet
+// Verification status — required, bound to FHIR standard ValueSet
 * verificationStatus 1..1 MS
 * insert CodeableConceptRule(verificationStatus, 1..1, MS)
+* verificationStatus from http://hl7.org/fhir/ValueSet/condition-ver-status (required)
 
 // Category — required
 * category 1..* MS

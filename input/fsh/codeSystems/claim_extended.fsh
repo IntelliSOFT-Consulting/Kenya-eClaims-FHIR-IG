@@ -2,58 +2,58 @@
 CodeSystem: ClaimStatusCS
 Id: claim-status-cs
 Title: "Claim Status Code System"
-Description: "Codes for the status of a claim (MOH-Kenya OCL: CLAIM-STATUS)"
+Description: "Codes for the status of a claim. Codes align with FHIR fm-status to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #DRAFT "Draft"
-* #ACTIVE "Active"
-* #CANCELLED "Cancelled"
-* #ENTERED-IN-ERROR "Entered in Error"
+* #draft "Draft"
+* #active "Active"
+* #cancelled "Cancelled"
+* #entered-in-error "Entered in Error"
 
 
 CodeSystem: ClaimTypeCS
 Id: claim-type-cs
 Title: "Claim Type Code System"
-Description: "Codes for the type of claim (MOH-Kenya OCL: CLAIM-TYPE)"
+Description: "Codes for the type of claim. Codes align with FHIR claim-type to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #INSTITUTIONAL "Institutional"
-* #PROFESSIONAL "Professional"
-* #ORAL "Oral"
-* #PHARMACY "Pharmacy"
-* #VISION "Vision"
+* #institutional "Institutional"
+* #professional "Professional"
+* #oral "Oral"
+* #pharmacy "Pharmacy"
+* #vision "Vision"
 
 
 CodeSystem: ClaimSubTypeCS
 Id: claim-subtype-cs
 Title: "Claim Subtype Code System"
-Description: "Codes for the subtype of claim (MOH-Kenya OCL: CLAIM-SUBTYPE)"
+Description: "Kenya-specific codes for the subtype of claim (MOH-Kenya OCL: CLAIM-SUBTYPE)."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #DAY-CASE "Day Case"
-* #REHABILITATION "Rehabilitation"
-* #INPATIENT "Inpatient"
-* #OUTPATIENT "Outpatient"
-* #EMERGENCY "Emergency"
+* #day-case "Day Case"
+* #rehabilitation "Rehabilitation"
+* #inpatient "Inpatient"
+* #outpatient "Outpatient"
+* #emergency "Emergency"
 
 
 CodeSystem: ClaimUseCS
 Id: claim-use-cs
 Title: "Claim Use Code System"
-Description: "Codes for the intended use of a claim (MOH-Kenya OCL: CLAIM-USE)"
+Description: "Codes for the intended use of a claim. Codes align with FHIR claim-use to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #CLAIM "Claim"
-* #PREAUTHORIZATION "Preauthorization"
-* #PREDETERMINATION "Predetermination"
+* #claim "Claim"
+* #preauthorization "Preauthorization"
+* #predetermination "Predetermination"
 
 
 CodeSystem: ClaimCareTeamRoleCS

@@ -2,15 +2,15 @@
 CodeSystem: IdentifierUseCS
 Id: identifier-use-cs
 Title: "Identifier Use Code System"
-Description: "Codes for the use of an identifier (MOH-Kenya OCL: IDENTIFIER-USE)"
+Description: "Codes for the use of an identifier. Codes align with FHIR identifier-use to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #USUAL "Usual"
-* #OFFICIAL "Official"
-* #TEMP "Temporary"
-* #OLD "Old"
+* #usual "Usual"
+* #official "Official"
+* #temp "Temporary"
+* #old "Old"
 
 
 CodeSystem: IdentifierTypesCS
@@ -37,96 +37,96 @@ Description: "Codes for types of identifiers used in Kenya (MOH-Kenya OCL: IDENT
 CodeSystem: NameUseCS
 Id: name-use-cs
 Title: "Name Use Code System"
-Description: "Codes for the use of a name (MOH-Kenya OCL: NAME-USE)"
+Description: "Codes for the use of a name. Codes align with FHIR name-use to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #OFFICIAL "Official"
-* #USUAL "Usual"
-* #NICKNAME "Nickname"
-* #ANONYMOUS "Anonymous"
-* #MAIDEN "Maiden"
-* #OLD "Old"
-* #TEMP "Temporary"
+* #official "Official"
+* #usual "Usual"
+* #nickname "Nickname"
+* #anonymous "Anonymous"
+* #maiden "Maiden"
+* #old "Old"
+* #temp "Temporary"
 
 
 CodeSystem: ContactPointSystemCS
 Id: contact-point-system-cs
 Title: "Contact Point System Code System"
-Description: "Codes for contact point systems (MOH-Kenya OCL: CONTACT-POINT-SYSTEM)"
+Description: "Codes for contact point systems. Codes align with FHIR contact-point-system to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #PHONE "Phone"
-* #FAX "Fax"
-* #EMAIL "Email"
-* #PAGER "Pager"
-* #URL "URL"
-* #SMS "SMS"
-* #OTHER "Other"
+* #phone "Phone"
+* #fax "Fax"
+* #email "Email"
+* #pager "Pager"
+* #url "URL"
+* #sms "SMS"
+* #other "Other"
 
 
 CodeSystem: ContactPointUseCS
 Id: contact-point-use-cs
 Title: "Contact Point Use Code System"
-Description: "Codes for contact point use (MOH-Kenya OCL: CONTACT-POINT-USE)"
+Description: "Codes for contact point use. Codes align with FHIR contact-point-use to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #HOME "Home"
-* #WORK "Work"
-* #TEMP "Temporary"
-* #OLD "Old"
-* #MOBILE "Mobile"
+* #home "Home"
+* #work "Work"
+* #temp "Temporary"
+* #old "Old"
+* #mobile "Mobile"
 
 
 CodeSystem: AddressUseCS
 Id: address-use-cs
 Title: "Address Use Code System"
-Description: "Codes for the use of an address (MOH-Kenya OCL: ADDRESS-USE)"
+Description: "Codes for the use of an address. Codes align with FHIR address-use to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #HOME "Home"
-* #WORK "Work"
-* #TEMPORARY "Temporary"
-* #OLD-INCORRECT "Old/Incorrect"
-* #BILLING "Billing"
+* #home "Home"
+* #work "Work"
+* #temp "Temporary"
+* #old "Old/Incorrect"
+* #billing "Billing"
 
 
 CodeSystem: AdministrativeGenderCS
 Id: administrative-gender-cs
 Title: "Administrative Gender Code System"
-Description: "Codes for administrative gender (MOH-Kenya OCL: ADMINISTRATIVE-GENDER)"
+Description: "Codes for administrative gender. Codes align with FHIR administrative-gender to allow required binding as a subset."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #MALE "Male"
-* #FEMALE "Female"
-* #OTHER "Other"
-* #UNKNOWN "Unknown"
+* #male "Male"
+* #female "Female"
+* #other "Other"
+* #unknown "Unknown"
 
 
 CodeSystem: GenderCS
 Id: gender-cs
 Title: "Gender Code System"
-Description: "Extended gender codes for Kenya (MOH-Kenya OCL: GENDER)"
+Description: "Extended gender identity codes for Kenya (MOH-Kenya OCL: GENDER). Extends beyond FHIR administrative-gender with additional local codes."
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #MALE "Male"
-* #FEMALE "Female"
-* #INTERSEX "Intersex"
-* #NON-CONFORMING "Non-Conforming"
-* #PREFER-NOT-TO-SAY "Prefer Not To Say"
-* #TRANSGENDER "Transgender"
-* #GENDERQUEER "Genderqueer"
+* #male "Male"
+* #female "Female"
+* #intersex "Intersex"
+* #non-conforming "Non-Conforming"
+* #prefer-not-to-say "Prefer Not To Say"
+* #transgender "Transgender"
+* #genderqueer "Genderqueer"
 
 
 CodeSystem: CivilStatusCS

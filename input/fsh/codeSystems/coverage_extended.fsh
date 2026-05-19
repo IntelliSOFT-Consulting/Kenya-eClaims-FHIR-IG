@@ -89,8 +89,8 @@ Description: "Codes for the relationship between related claims (MOH-Kenya OCL: 
 * ^content = #complete
 * ^experimental = false
 * ^caseSensitive = true
-* #PRIOR "Prior"
-* #ASSOCIATED "Associated"
-* #REPLACES "Replaces"
-* #REPLACED-BY "Replaced By"
-* #DUPLICATE "Duplicate"
+* #prior "Prior"
+* #associated "Associated"
+* #replaces "Replaces"
+* #replaced-by "Replaced By"
+* #duplicate "Duplicate"
