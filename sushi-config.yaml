@@ -78,7 +78,9 @@ menu:
 parameters:
   show-inherited-invariants: false
   apply-contact: true
-  apply-jurisdiction: true
+  # Keep jurisdiction on the IG itself, but do not stamp every canonical artifact.
+  # This avoids publisher-side jurisdiction validation timeouts on large resources.
+  apply-jurisdiction: false
   apply-license: true
   apply-publisher: true
   apply-version: true

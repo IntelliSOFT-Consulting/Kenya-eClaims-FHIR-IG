@@ -12,6 +12,10 @@ The Implementation Guide contains no examples for this profile
 # MustSupport slice warning for medication dispense
 The slice 'asNeededCodeableConcept' on path 'MedicationDispense.dosageInstruction.asNeeded[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 
+# Inherited HL7 v2 mapping text on MedicationDispense.daysSupply includes angle brackets and
+# triggers a Publisher security-content heuristic, but it is descriptive mapping text, not HTML.
+The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+
 # ICD-11 is an external terminology not loaded in the IG validator
 A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be found, so the code cannot be validated
 
