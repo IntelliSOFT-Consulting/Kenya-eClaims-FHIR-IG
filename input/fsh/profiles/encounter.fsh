@@ -5,6 +5,7 @@ Title: "eClaims Encounter Profile"
 Description: "This profile defines constraints on the Encounter resource for use within the Kenya eClaims Implementation Guide. It captures the healthcare interaction during which services are rendered and claims are generated."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Identifier
 * insert IdentifierRequiredRule(identifier, 1..*)

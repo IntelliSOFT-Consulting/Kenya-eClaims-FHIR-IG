@@ -7,6 +7,7 @@ Description: "This profile defines constraints on the Coverage resource for use 
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..* MS
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 * insert IdentifierRequiredRule(identifier, 1..*)
 

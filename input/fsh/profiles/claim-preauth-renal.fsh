@@ -7,7 +7,7 @@ This profile is for requesting authorization for renal dialysis sessions.
 """
 
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
+* type = ClaimTypeCS#institutional "Institutional"
 // * subType = OrgNameClaimTypeCS#RENAL
 
 // Must haves

@@ -8,7 +8,7 @@ This profile is for authorizing Cancer Treatment.
 
 // Must haves
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
+* type = ClaimTypeCS#institutional "Institutional"
 // * subType = OrgNameClaimTypeCS#ONCOLOGY
 
 * extension contains CarcinomaStaging named carcinomaStaging 1..1 MS

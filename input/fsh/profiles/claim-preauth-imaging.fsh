@@ -7,7 +7,7 @@ This profile is for authorizing high-cost Diagnostic Imaging.
 """
 
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
+* type = ClaimTypeCS#institutional "Institutional"
 // * subType = OrgNameClaimTypeCS#IMAGING
 
 // Must haves

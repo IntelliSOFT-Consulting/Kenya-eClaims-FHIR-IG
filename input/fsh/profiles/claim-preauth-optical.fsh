@@ -7,7 +7,7 @@ This profile is for Optical Services.
 """
 
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#vision
+* type = ClaimTypeCS#vision "Vision"
 // * subType = OrgNameClaimTypeCS#OPTICAL
 
 * extension contains LensPrescription named lensPrescription 1..1 MS

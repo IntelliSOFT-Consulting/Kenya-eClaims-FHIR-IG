@@ -5,6 +5,7 @@ Title: "eClaims Patient Profile"
 Description: "This profile defines constraints on the Patient resource for use within the Kenya eClaims Implementation Guide. It represents a patient receiving healthcare services under the national insurance scheme."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Identifier — must have at least one with system and value
 * insert IdentifierRequiredRule(identifier, 1..*)
@@ -57,6 +58,7 @@ Description: "This profile defines constraints on the Patient resource for use w
 * contact.relationship from http://hl7.org/fhir/ValueSet/patient-contactrelationship (required)
 * contact.name 1..1 MS
 * contact.telecom 1..* MS
+* communication.language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Deceased
 * deceased[x] 0..1 MS

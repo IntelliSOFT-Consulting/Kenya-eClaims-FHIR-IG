@@ -8,7 +8,7 @@ Description: "An example of a Preauthorization that was canceled by request."
 * status = #active
 * outcome = #complete
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
+* type = ClaimTypeCS#institutional "Institutional"
 * created = "2025-10-03T07:36:24+00:00"
 
 * extension[claimExpiry].valueCodeableConcept.coding.system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-expiry-cs"
@@ -26,13 +26,13 @@ Description: "An example of a Preauthorization that was canceled by request."
 * request.reference = "Claim/a7dcd571-d8a2-483a-8a45-e3c8bcbff8b8"
 
 * item[0].itemSequence = 1
-* item[0].adjudication[0].category.text = "benefit"
+* item[0].adjudication[0].category = AdjudicationCS#benefit "Benefit Amount"
 * item[0].adjudication[0].reason.text = "Auto Approved."
 * item[0].adjudication[0].amount.value = 11200
 * item[0].adjudication[0].amount.currency = #KES
 * item[0].adjudication[0].value = 0
 
-* total[0].category.text = "benefit" 
+* total[0].category = AdjudicationCS#benefit "Benefit Amount"
 * total[0].amount.value = 11200
 * total[0].amount.currency = #KES
 

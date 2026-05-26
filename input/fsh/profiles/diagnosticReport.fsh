@@ -5,6 +5,7 @@ Title: "eClaims Diagnostic Report Profile"
 Description: "This profile defines constraints on the DiagnosticReport resource for use within the Kenya eClaims Implementation Guide. It represents findings from diagnostic tests (lab, radiology, pathology) associated with a claim."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Status
 * status 1..1 MS

@@ -9,6 +9,7 @@ Description: "This profile defines constraints on the PaymentNotice resource for
 * meta.profile 1..* MS
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Identifier
 * insert IdentifierRequiredRule(identifier, 1..*)

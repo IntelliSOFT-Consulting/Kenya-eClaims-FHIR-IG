@@ -49,7 +49,7 @@ Id: condition-codes-cs
 Title: "Condition Codes Code System"
 Description: "Local codes for conditions/diagnoses (MOH-Kenya: CONDITION-CODES)"
 * ^status = #active
-* ^content = #fragment
+* ^content = #not-present
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -124,6 +124,6 @@ Id: generic-products-cs
 Title: "Generic Products Code System"
 Description: "Codes for generic pharmaceutical products used in Kenya dispensing (MOH-Kenya: GenericProducts)"
 * ^status = #active
-* ^content = #fragment
+* ^content = #not-present
 * ^experimental = false
 * ^caseSensitive = true

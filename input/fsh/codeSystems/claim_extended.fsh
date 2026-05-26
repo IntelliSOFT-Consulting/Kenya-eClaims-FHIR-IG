@@ -55,6 +55,92 @@ Description: "Codes for the intended use of a claim. Codes align with FHIR claim
 * #preauthorization "Preauthorization"
 * #predetermination "Predetermination"
 
+CodeSystem: ProcessPriorityCS
+Id: process-priority-cs
+Title: "Process Priority Code System"
+Description: "Codes for financial processing priority. Codes align with FHIR processpriority to avoid dependencies on draft core artifacts."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #stat "Immediate"
+* #normal "Normal"
+* #deferred "Deferred"
+
+CodeSystem: PayeeTypeCS
+Id: payee-type-cs
+Title: "Payee Type Code System"
+Description: "Codes for the party to be reimbursed. Codes align with FHIR payeetype."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #subscriber "Subscriber"
+* #provider "Provider"
+* #beneficiary "Beneficiary"
+* #other "Other"
+
+CodeSystem: ClaimInformationCategoryCS
+Id: claim-information-category-cs
+Title: "Claim Information Category Code System"
+Description: "Codes for claim supporting information categories. Codes align with FHIR claiminformationcategory."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #info "Information"
+* #discharge "Discharge"
+* #onset "Onset"
+* #related "Related Services"
+* #exception "Exception"
+* #material "Materials Forwarded"
+* #attachment "Attachment"
+* #missingtooth "Missing Tooth"
+* #prosthesis "Prosthesis"
+* #other "Other"
+* #hospitalized "Hospitalized"
+* #employmentimpacted "EmploymentImpacted"
+* #externalcause "External Cause"
+* #patientreasonforvisit "Patient Reason for Visit"
+
+CodeSystem: DiagnosisTypeCS
+Id: diagnosis-type-cs
+Title: "Diagnosis Type Code System"
+Description: "Codes for diagnosis type. Codes align with FHIR ex-diagnosistype."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #admitting "Admitting Diagnosis"
+* #clinical "Clinical Diagnosis"
+* #differential "Differential Diagnosis"
+* #discharge "Discharge Diagnosis"
+* #laboratory "Laboratory Diagnosis"
+* #nursing "Nursing Diagnosis"
+* #prenatal "Prenatal Diagnosis"
+* #principal "Principal Diagnosis"
+* #radiology "Radiology Diagnosis"
+* #remote "Remote Diagnosis"
+* #retrospective "Retrospective Diagnosis"
+* #self "Self Diagnosis"
+
+CodeSystem: AdjudicationCS
+Id: adjudication-cs
+Title: "Adjudication Code System"
+Description: "Codes for adjudication result categories. Codes align with FHIR adjudication."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #submitted "Submitted Amount"
+* #copay "CoPay"
+* #eligible "Eligible Amount"
+* #deductible "Deductible"
+* #unallocdeduct "Unallocated Deductible"
+* #eligpercent "Eligible %"
+* #tax "Tax"
+* #benefit "Benefit Amount"
+
 
 CodeSystem: ClaimCareTeamRoleCS
 Id: claim-care-team-role-cs

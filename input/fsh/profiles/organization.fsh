@@ -5,6 +5,7 @@ Title: "eClaims Organization Profile"
 Description: "This profile defines constraints on the Organization resource for use within the Kenya eClaims Implementation Guide. It represents healthcare providers, insurers, and other organizations involved in claim processing."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Identifier
 * identifier 0..* MS

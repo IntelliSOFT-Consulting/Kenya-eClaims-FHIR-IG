@@ -5,6 +5,7 @@ Title: "eClaims Episode of Care Profile"
 Description: "This profile defines constraints on the EpisodeOfCare resource for use within the Kenya eClaims Implementation Guide. It groups a set of related encounters and activities for a patient within a specific care program."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Status
 * status 1..1 MS
