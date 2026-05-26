@@ -5,6 +5,7 @@ Title: "eClaims Medication Dispense Profile"
 Description: "This profile defines constraints on the MedicationDispense resource for use within the Kenya eClaims Implementation Guide. It represents the dispensing of a medication to a patient."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Status
 * status 1..1 MS
@@ -45,6 +46,8 @@ Description: "This profile defines constraints on the MedicationDispense resourc
 * quantity.value 1..1 MS
 * quantity.unit 1..1 MS
 * quantity.system 1..1 MS
+* daysSupply ^mapping[0].identity = "v2"
+* daysSupply ^mapping[0].map = "TQ1.6 Timing/Quantity Segment Service Duration. From v2.5 onward, represent days supply as a CQ with Quantity NM and Units CWE."
 
 // When handed over
 * whenHandedOver 1..1 MS

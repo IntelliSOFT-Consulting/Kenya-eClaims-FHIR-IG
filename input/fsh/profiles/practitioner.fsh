@@ -5,6 +5,7 @@ Title: "eClaims Practitioner Profile"
 Description: "This profile defines constraints on the Practitioner resource for use within the Kenya eClaims Implementation Guide. It represents a healthcare professional involved in claim processing or service delivery."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Identifier
 * insert IdentifierRequiredRule(identifier, 1..*)
@@ -47,6 +48,7 @@ Description: "This profile defines constraints on the Practitioner resource for 
 * gender 1..1 MS
 * gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
 * birthDate 1..1 MS
+* communication from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Qualifications
 * qualification 0..* MS

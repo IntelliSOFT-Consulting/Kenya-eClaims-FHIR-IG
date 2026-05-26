@@ -5,6 +5,7 @@ Title: "eClaims Medication Request Profile"
 Description: "This profile defines constraints on the MedicationRequest resource for use within the Kenya eClaims Implementation Guide. It represents a prescription or order for a medication for a patient."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Status
 * status 1..1 MS

@@ -5,6 +5,7 @@ Title: "eClaims Condition/Diagnosis Profile"
 Description: "This profile defines constraints on the Condition resource for use within the Kenya eClaims Implementation Guide. It represents a clinical diagnosis or problem associated with a patient's healthcare encounter."
 
 * implicitRules 0..1
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 // Identifier
 * insert IdentifierRequiredRule(identifier, 1..*)

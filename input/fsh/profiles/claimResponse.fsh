@@ -7,6 +7,7 @@ Description: "Profile for the response to a Claim or Preauthorization, including
 * extension contains ClaimStateExtension named claimState 1..1 MS
 * extension contains ClaimExpiryExtension named claimExpiry 0..1 MS
 
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 * status 1..1 MS
 * status = #active (exactly) 
 * outcome 1..1 MS
@@ -22,15 +23,18 @@ Description: "Profile for the response to a Claim or Preauthorization, including
 * item.itemSequence 1..1 MS
 * item.adjudication 1..* MS
 * item.adjudication.category 1..1 MS
+* item.adjudication.category from AdjudicationVS (required)
 * item.adjudication.amount 0..1 MS 
 * item.adjudication.reason 0..1 MS
 
 * total 0..* MS
 * total.category 1..1 MS
+* total.category from AdjudicationVS (required)
 * total.amount 1..1 MS
 * total.amount.currency 1..1 MS
 
 * processNote 0..* MS
 * processNote.number 0..1 MS
 * processNote.type 0..1 MS
+* processNote.language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 * processNote.text 1..1 MS

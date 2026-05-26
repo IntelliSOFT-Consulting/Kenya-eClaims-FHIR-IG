@@ -12,8 +12,10 @@ Description: "This profile defines constraints on the Claim resource for use wit
 * identifier 1..1 MS
 * status 1..1 MS
 * use 1..1 MS
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 
 * insert CodeableConceptRule(type, 1..1, MS)
+* type from ClaimTypeVS (required)
 * insert CodeableConceptRule(subType, 0..1, MS)
 * insert ReferenceRule(patient, Patient, 1..1)
 
@@ -25,6 +27,7 @@ Description: "This profile defines constraints on the Claim resource for use wit
 * insert ReferenceRule(provider, Organization, 1..1)
 
 * insert CodeableConceptRule(priority, 1..1, MS)
+* priority from ProcessPriorityVS (required)
 
 * related 0..* MS
 
@@ -40,6 +43,7 @@ Description: "This profile defines constraints on the Claim resource for use wit
 * payee 1..1 MS
 
 * insert CodeableConceptRule(payee.type, 1..1, MS)
+* payee.type from PayeeTypeVS (required)
 * payee.party 0..1 MS
 
 * payee.party only Reference(Patient or Organization)
@@ -51,11 +55,13 @@ Description: "This profile defines constraints on the Claim resource for use wit
 
 * insert ReferenceRule(careTeam.provider, Practitioner, 1..1)
 * insert CodeableConceptRule(careTeam.role , 1..1, MS)
+* careTeam.role from ClaimCareTeamRoleVS (required)
 * insert CodeableConceptRule(careTeam.qualification , 1..1, MS)
 
 * supportingInfo 0..* MS
 * supportingInfo.sequence 1..1 MS
 * supportingInfo.category 1..1 MS
+* supportingInfo.category from ClaimInformationCategoryVS (required)
 * supportingInfo.code 0..1 MS
 * supportingInfo.timing[x] 0..1 MS
 * supportingInfo.value[x] 0..1 MS
@@ -67,6 +73,7 @@ Description: "This profile defines constraints on the Claim resource for use wit
 * diagnosis.diagnosis[x] only CodeableConcept
 
 * insert CodeableConceptRule(diagnosis.type , 1..1, MS)
+* diagnosis.type from DiagnosisTypeVS (required)
 * insert CodeableConceptRule(diagnosis.onAdmission , 0..1, MS)
 
 * insurance 1..* MS
@@ -141,13 +148,9 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "http://terminology.hl7.org/CodeSystem/claim-type"
-* type.coding[0].code = #institutional
-* type.coding[0].display = "Institutional"
+* type = ClaimTypeCS#institutional "Institutional"
 
-* subType.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-subtype-cs"
-* subType.coding[0].code = #inpatient
-* subType.coding[0].display = "Inpatient"
+* subType = ClaimSubTypeCS#inpatient "Inpatient"
 
 * patient = Reference(Patient/PT-0001)
 * provider = Reference(Organization/ORG-001)
@@ -158,18 +161,14 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 
 * created = "2025-12-16T12:00:00+03:00"
 
-* priority.coding[0].system = "http://terminology.hl7.org/CodeSystem/processpriority"
-* priority.coding[0].code = #normal
-* priority.coding[0].display = "Normal"
+* priority = ProcessPriorityCS#normal "Normal"
 
 * related[0].claim = Reference(Claim/CLAIM-0000X)
 * related[0].relationship.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/related-claim-relationship-cs"
 * related[0].relationship.coding[0].code = #associated
 * related[0].relationship.coding[0].display = "Associated"
 
-* payee.type.coding[0].system = "http://terminology.hl7.org/CodeSystem/payeetype"
-* payee.type.coding[0].code = #provider
-* payee.type.coding[0].display = "Provider"
+* payee.type = PayeeTypeCS#provider "Provider"
 
 * payee.party = Reference(Organization/ORG-001)
 * facility = Reference(Location/LOC-001)
@@ -177,17 +176,13 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * careTeam[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
 * careTeam[0].provider = Reference(Practitioner/PRA-001)
-* careTeam[0].role.coding[0].system = "http://terminology.hl7.org/CodeSystem/claimcareteamrole"
-* careTeam[0].role.coding[0].code = #primary
-* careTeam[0].role.coding[0].display = "Primary Provider"
+* careTeam[0].role = ClaimCareTeamRoleCS#PRIMARY "Primary provider"
 * careTeam[0].qualification.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0360"
 * careTeam[0].qualification.coding[0].code = #MD
 * careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 
 * supportingInfo[0].sequence = 1
-* supportingInfo[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/claiminformationcategory"
-* supportingInfo[0].category.coding[0].code = #attachment
-* supportingInfo[0].category.coding[0].display = "Attachment"
+* supportingInfo[0].category = ClaimInformationCategoryCS#attachment "Attachment"
 * supportingInfo[0].valueAttachment.contentType = #application/pdf
 * supportingInfo[0].valueAttachment.url = "https://api-edi.provider.sha.go.ke/media/claim/CHURCHILL_X-RAY.pdf"
 * supportingInfo[0].valueAttachment.title = "CHURCHILL X-RAY"
@@ -197,9 +192,7 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * diagnosis[0].diagnosisCodeableConcept.coding[0].system = "http://id.who.int/icd/release/11/mms"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #NC72.5
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Fracture of shaft of femur"
-* diagnosis[0].type.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
-* diagnosis[0].type.coding[0].code = #principal
-* diagnosis[0].type.coding[0].display = "Principal Diagnosis"
+* diagnosis[0].type = DiagnosisTypeCS#principal "Principal Diagnosis"
 
 * insurance[0].sequence = 1
 * insurance[0].focal = true
@@ -220,7 +213,6 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 
 * total.value = 145600
 * total.currency = #KES
-
 
 
 

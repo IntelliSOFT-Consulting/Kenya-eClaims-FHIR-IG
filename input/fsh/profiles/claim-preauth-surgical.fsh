@@ -8,7 +8,7 @@ This profile covers invasive procedures requiring a theatre or sterile setting.
 
 // Must haves
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
+* type = ClaimTypeCS#institutional "Institutional"
 // * subType = OrgNameClaimTypeCS#SURGICAL
 
 * extension contains AnaesthesiaType named anaesthesiaType 1..1 MS

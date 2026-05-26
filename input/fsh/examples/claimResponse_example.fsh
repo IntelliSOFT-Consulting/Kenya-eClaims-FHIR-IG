@@ -8,7 +8,7 @@ Description: "An example of a ClaimResponse returned to the provider for surveil
 * status = #active
 * outcome = #complete
 * use = #claim
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
+* type = ClaimTypeCS#institutional "Institutional"
 * created = "2025-10-07T18:47:22+00:00"
 
 * extension[claimState].valueCodeableConcept.coding.system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-state-cs"
@@ -23,12 +23,12 @@ Description: "An example of a ClaimResponse returned to the provider for surveil
 * insurer.display = "Social Health Authority"
 
 * item[0].itemSequence = 1
-* item[0].adjudication[0].category.text = "benefit"
+* item[0].adjudication[0].category = AdjudicationCS#benefit "Benefit Amount"
 * item[0].adjudication[0].reason.text = "Auto Approved."
 * item[0].adjudication[0].amount.value = 11200
 * item[0].adjudication[0].amount.currency = #KES
 
-* total[0].category = http://terminology.hl7.org/CodeSystem/adjudication#benefit
+* total[0].category = AdjudicationCS#benefit "Benefit Amount"
 * total[0].amount.value = 11200
 * total[0].amount.currency = #KES
 

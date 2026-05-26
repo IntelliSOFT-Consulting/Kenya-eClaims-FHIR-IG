@@ -10,6 +10,7 @@ used across the entire eClaims ecosystem.
 
 // Identifiers & Metadata
 * insert IdentifierRequiredRule(identifier, 1..*)
+* language from http://hl7.org/fhir/ValueSet/all-languages (preferred)
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/fm-status (required)
 
@@ -23,7 +24,7 @@ used across the entire eClaims ecosystem.
 * subType from ClaimSubTypeVS (required)
 
 * insert CodeableConceptRule(priority, 1..1, MS)
-* priority from http://hl7.org/fhir/ValueSet/process-priority (required)
+* priority from ProcessPriorityVS (required)
 
 // Actors
 * insert ReferenceRule(patient, EClaimsPatient, 1..1)
@@ -41,7 +42,7 @@ used across the entire eClaims ecosystem.
 * payee 1..1 MS
 * payee.type 1..1 MS
 * insert CodeableConceptRule(payee.type, 1..1, MS)
-* payee.type from http://hl7.org/fhir/ValueSet/payeetype (required)
+* payee.type from PayeeTypeVS (required)
 
 // Care team
 * careTeam 0..* MS
@@ -59,7 +60,7 @@ used across the entire eClaims ecosystem.
 * supportingInfo.sequence 1..1 MS
 * supportingInfo.category 1..1 MS
 * insert CodeableConceptRule(supportingInfo.category, 1..1, MS)
-* supportingInfo.category from http://hl7.org/fhir/ValueSet/claim-informationcategory (required)
+* supportingInfo.category from ClaimInformationCategoryVS (required)
 * supportingInfo.value[x] only Attachment
 * supportingInfo.valueAttachment 1..1 MS
 
@@ -122,7 +123,7 @@ used across the entire eClaims ecosystem.
 * diagnosis.diagnosisCodeableConcept from ClaimDiagnosisCodeableConceptVS (required)
 * diagnosis.type 0..* MS
 * insert CodeableConceptRule(diagnosis.type, 0..1, MS)
-* diagnosis.type from http://hl7.org/fhir/ValueSet/ex-diagnosistype (required)
+* diagnosis.type from DiagnosisTypeVS (required)
 * diagnosis.onAdmission 0..1 MS
 * insert CodeableConceptRule(diagnosis.onAdmission, 0..1, MS)
 * diagnosis.onAdmission from http://hl7.org/fhir/ValueSet/ex-diagnosis-on-admission (required)
