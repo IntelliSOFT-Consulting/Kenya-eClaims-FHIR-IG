@@ -1,6 +1,6 @@
 
 ValueSet: ClaimStatusVS
-Id: claim-status-vs
+Id: eclaim-status-vs
 Title: "Claim Status ValueSet"
 Description: "ValueSet for claim status codes (MOH-Kenya OCL: CLAIM-STATUS)"
 * ^status = #active
@@ -9,7 +9,7 @@ Description: "ValueSet for claim status codes (MOH-Kenya OCL: CLAIM-STATUS)"
 
 
 ValueSet: ClaimTypeVS
-Id: claim-type-vs
+Id: eclaim-type-vs
 Title: "Claim Type ValueSet"
 Description: "ValueSet for claim type codes (MOH-Kenya OCL: CLAIM-TYPE)"
 * ^status = #active
@@ -18,7 +18,7 @@ Description: "ValueSet for claim type codes (MOH-Kenya OCL: CLAIM-TYPE)"
 
 
 ValueSet: ClaimSubTypeVS
-Id: claim-subtype-vs
+Id: eclaim-subtype-vs
 Title: "Claim Subtype ValueSet"
 Description: "ValueSet for claim subtype codes (MOH-Kenya OCL: CLAIM-SUBTYPE)"
 * ^status = #active
@@ -27,7 +27,7 @@ Description: "ValueSet for claim subtype codes (MOH-Kenya OCL: CLAIM-SUBTYPE)"
 
 
 ValueSet: ClaimUseVS
-Id: claim-use-vs
+Id: eclaim-use-vs
 Title: "Claim Use ValueSet"
 Description: "ValueSet for intended use of a claim (MOH-Kenya OCL: CLAIM-USE)"
 * ^status = #active
@@ -36,7 +36,7 @@ Description: "ValueSet for intended use of a claim (MOH-Kenya OCL: CLAIM-USE)"
 
 
 ValueSet: ClaimCareTeamRoleVS
-Id: claim-care-team-role-vs
+Id: eclaim-care-team-role-vs
 Title: "Claim Care Team Role ValueSet"
 Description: "ValueSet for the role of a care team member in a claim (MOH-Kenya OCL: CLAIM-CARE-TEAM-ROLE)"
 * ^status = #active

@@ -23,12 +23,20 @@ Description: "An example of a ClaimResponse returned to the provider for surveil
 * insurer.display = "Social Health Authority"
 
 * item[0].itemSequence = 1
+* item[0].adjudication[0].category.coding.system = "http://terminology.hl7.org/CodeSystem/adjudication"
+* item[0].adjudication[0].category.coding.code = #benefit
+* item[0].adjudication[0].category.coding.display = "Benefit Amount"
 * item[0].adjudication[0].category.text = "benefit"
+* item[0].adjudication[0].reason.coding.system = "http://terminology.hl7.org/CodeSystem/adjudication-reason"
+* item[0].adjudication[0].reason.coding.code = #ar-excl
+* item[0].adjudication[0].reason.coding.display = "Auto Approved"
 * item[0].adjudication[0].reason.text = "Auto Approved."
 * item[0].adjudication[0].amount.value = 11200
 * item[0].adjudication[0].amount.currency = #KES
 
-* total[0].category = http://terminology.hl7.org/CodeSystem/adjudication#benefit
+* total[0].category.coding.system = "http://terminology.hl7.org/CodeSystem/adjudication"
+* total[0].category.coding.code = #benefit
+* total[0].category.coding.display = "Benefit Amount"
 * total[0].amount.value = 11200
 * total[0].amount.currency = #KES
 
