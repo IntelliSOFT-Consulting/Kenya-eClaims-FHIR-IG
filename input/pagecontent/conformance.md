@@ -56,8 +56,8 @@ A system claiming conformance as a **Healthcare Provider System** SHALL:
 - [ ] Include a minimum conformant Bundle per the requirements in [Actors & Transactions](actors.html#fhir-bundle-structure).
 - [ ] Populate `Patient.identifier` with at least one identifier of type `SHA-NUMBER` or `NATIONAL-ID`.
 - [ ] Populate `Coverage.class` with the patient's SHA scheme classification.
-- [ ] Reference `Claim.item.productOrService` codes from the [KenyaSocialHealthAuthorityInterventionsVS](ValueSet-KenyaSocialHealthAuthorityInterventionsVS.html).
-- [ ] Reference `Claim.diagnosis.diagnosisCodeableConcept` from the [ClaimDiagnosisCodeableConceptVS](ValueSet-ClaimDiagnosisCodeableConceptVS.html).
+- [ ] Reference `Claim.item.productOrService` codes from the [SocialHealthAuthorityInterventionsVS](ValueSet-eclaims-social-health-authority-interventions-vs.html).
+- [ ] Reference `Claim.diagnosis.diagnosisCodeableConcept` from the [ClaimDiagnosisVS](ValueSet-eclaims-claim-diagnosis-vs.html).
 - [ ] Receive and process `ClaimResponse` resources without error.
 - [ ] Store and reference preauthorization tokens (`ClaimResponse.preAuthRef`) when submitting post-auth claims.
 

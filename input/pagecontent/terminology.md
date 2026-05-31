@@ -149,7 +149,7 @@ Diagnoses in `Claim.diagnosis.diagnosisCodeableConcept` are drawn from the WHO I
 
 ### 5. SHA Interventions Catalogue
 
-`Claim.item.productOrService` **SHALL** reference a code from the [KenyaSocialHealthAuthorityInterventionsVS](ValueSet-KenyaSocialHealthAuthorityInterventionsVS.html), which maps to the SHA-approved interventions catalogue. This catalogue is maintained by SHA and synchronized into the MOH-Kenya OCL.
+`Claim.item.productOrService` **SHALL** reference a code from the [SocialHealthAuthorityInterventionsVS](ValueSet-eclaims-social-health-authority-interventions-vs.html), which maps to the SHA-approved interventions catalogue. This catalogue is maintained by SHA and synchronized into the MOH-Kenya OCL.
 
 Codes follow the pattern:
 - `SHA-01-xxx` — Primary Healthcare interventions

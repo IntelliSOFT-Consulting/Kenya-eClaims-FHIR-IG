@@ -113,7 +113,6 @@ CodeSystem: GenericProductsCS
 Id: eclaims-generic-products-cs
 Title: "Generic Products CodeSystem"
 Description: "Generic medicinal product codes from MOH PPB OCL."
-* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/generic-products-cs"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete

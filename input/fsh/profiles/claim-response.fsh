@@ -7,29 +7,39 @@ Description: "This profile defines constraints on the Claim resource for use wit
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..* MS
-
+* meta.tag from http://hl7.org/fhir/ValueSet/common-tags (required)
 
 * identifier 1..1 MS
 * status 1..1 MS
+* status from http://hl7.org/fhir/ValueSet/fm-status (required)
 * use 1..1 MS
+* use from http://hl7.org/fhir/ValueSet/claim-use (required)
 
 * insert CodeableConceptRule(type, 1..1, MS)
+* type from ClaimTypeVS (required)
+
 * insert CodeableConceptRule(subType, 0..1, MS)
+* subType from ClaimSubTypeVS (required)
+
 * insert ReferenceRule(patient, Patient, 1..1)
 
 * billablePeriod 0..1 MS
 * created 1..1 MS
 
 * insert ReferenceRule(insurer, Organization, 1..1)
-
 * insert ReferenceRule(provider, Organization, 1..1)
 
 * insert CodeableConceptRule(priority, 1..1, MS)
+* priority from http://hl7.org/fhir/ValueSet/process-priority (required)
+
+* fundsReserve 0..1 MS
+* insert CodeableConceptRule(fundsReserve, 0..1, MS)
+* fundsReserve from http://hl7.org/fhir/ValueSet/fundsreserve (required)
 
 * related 0..* MS
-
 * insert ReferenceRule(related.claim, Claim, 1..1)
 * insert CodeableConceptRule(related.relationship, 1..1, MS)
+* related.relationship from RelatedClaimRelationshipVS (required)
 
 * prescription 0..1 MS
 * prescription only Reference(MedicationRequest or DeviceRequest or VisionPrescription)
@@ -38,36 +48,55 @@ Description: "This profile defines constraints on the Claim resource for use wit
 * insert ReferenceRule(referral, ServiceRequest, 1..1)
 
 * payee 1..1 MS
-
 * insert CodeableConceptRule(payee.type, 1..1, MS)
+* payee.type from http://hl7.org/fhir/ValueSet/payeetype (required)
 * payee.party 0..1 MS
-
 * payee.party only Reference(Patient or Organization)
 
 * insert ReferenceRule(facility, Location, 1..1)
 
 * careTeam 1..* MS
 * careTeam.sequence 1..1 MS
-
 * insert ReferenceRule(careTeam.provider, Practitioner, 1..1)
-* insert CodeableConceptRule(careTeam.role , 1..1, MS)
-* insert CodeableConceptRule(careTeam.qualification , 1..1, MS)
+* insert CodeableConceptRule(careTeam.role, 1..1, MS)
+* careTeam.role from ClaimCareTeamRoleVS (required)
+* insert CodeableConceptRule(careTeam.qualification, 1..1, MS)
+* careTeam.qualification from ProviderQualificationVS (required)
 
 * supportingInfo 0..* MS
 * supportingInfo.sequence 1..1 MS
 * supportingInfo.category 1..1 MS
+* insert CodeableConceptRule(supportingInfo.category, 1..1, MS)
+* supportingInfo.category from http://hl7.org/fhir/ValueSet/claim-informationcategory (required)
 * supportingInfo.code 0..1 MS
+* insert CodeableConceptRule(supportingInfo.code, 0..1, MS)
+* supportingInfo.code from http://hl7.org/fhir/ValueSet/claim-exception (required)
 * supportingInfo.timing[x] 0..1 MS
 * supportingInfo.value[x] 0..1 MS
 * supportingInfo.reason 0..1 MS
+* insert CodeableConceptRule(supportingInfo.reason, 0..1, MS)
+* supportingInfo.reason from http://hl7.org/fhir/ValueSet/missing-tooth-reason (required)
 
 * diagnosis 1..* MS
 * diagnosis.sequence 1..1 MS
 * diagnosis.diagnosis[x] 1..1 MS
 * diagnosis.diagnosis[x] only CodeableConcept
+* insert CodeableConceptRule(diagnosis.diagnosisCodeableConcept, 1..1, MS)
+* diagnosis.diagnosisCodeableConcept from ClaimDiagnosisVS (required)
+* insert CodeableConceptRule(diagnosis.type, 1..1, MS)
+* diagnosis.type from http://hl7.org/fhir/ValueSet/ex-diagnosistype (required)
+* insert CodeableConceptRule(diagnosis.onAdmission, 0..1, MS)
+* diagnosis.onAdmission from http://hl7.org/fhir/ValueSet/ex-diagnosis-on-admission (required)
+* diagnosis.packageCode 0..1 MS
+* insert CodeableConceptRule(diagnosis.packageCode, 0..1, MS)
+* diagnosis.packageCode from http://hl7.org/fhir/ValueSet/ex-diagnosisrelatedgroup (required)
 
-* insert CodeableConceptRule(diagnosis.type , 1..1, MS)
-* insert CodeableConceptRule(diagnosis.onAdmission , 0..1, MS)
+* procedure 0..* MS
+* procedure.sequence 1..1 MS
+* procedure.type 0..* MS
+* insert CodeableConceptRule(procedure.type, 0..1, MS)
+* procedure.type from http://hl7.org/fhir/ValueSet/ex-procedure-type (required)
+* procedure.procedure[x] from http://hl7.org/fhir/ValueSet/icd-10-procedures (required)
 
 * insurance 1..* MS
 * insurance.sequence 1..1 MS
@@ -77,37 +106,64 @@ Description: "This profile defines constraints on the Claim resource for use wit
 * insurance.preAuthRef 0..* MS
 * insurance.claimResponse 0..1 MS
 
-
 * accident 0..1 MS
 * accident.date 1..1 MS
 * accident.type 1..1 MS
+* insert CodeableConceptRule(accident.type, 1..1, MS)
+* accident.type from http://terminology.hl7.org/ValueSet/v3-ActIncidentCode (required)
 * accident.location[x] 0..1 MS
-
 
 * item 1..* MS
 * item.sequence 1..1 MS
 * item.careTeamSequence 1..* MS
 * item.diagnosisSequence 0..* MS
 * item.informationSequence 0..* MS
-
-
-* insert CodeableConceptRule(item.productOrService , 1..1, MS)
-
+* insert CodeableConceptRule(item.productOrService, 1..1, MS)
+* item.productOrService from SocialHealthAuthorityInterventionsVS (required)
+* item.revenue 0..1 MS
+* insert CodeableConceptRule(item.revenue, 0..1, MS)
+* item.revenue from http://hl7.org/fhir/ValueSet/ex-revenue-center (required)
+* item.category 0..1 MS
+* insert CodeableConceptRule(item.category, 0..1, MS)
+* item.category from http://hl7.org/fhir/ValueSet/ex-benefitcategory (required)
+* item.modifier 0..* MS
+* insert CodeableConceptRule(item.modifier, 0..1, MS)
+* item.modifier from http://hl7.org/fhir/ValueSet/claim-modifiers (required)
+* item.programCode 0..* MS
+* insert CodeableConceptRule(item.programCode, 0..1, MS)
+* item.programCode from http://hl7.org/fhir/ValueSet/ex-program-code (required)
+* item.location[x] from http://hl7.org/fhir/ValueSet/service-place (required)
 * item.serviced[x] 0..1 MS
 * item.quantity 1..1 MS
 * item.unitPrice 1..1 MS
+* item.unitPrice.currency 1..1 MS
+* item.unitPrice.currency from http://hl7.org/fhir/ValueSet/currencies (required)
 * item.factor 0..1 MS
 * item.net 1..1 MS
+* item.net.currency 1..1 MS
+* item.net.currency from http://hl7.org/fhir/ValueSet/currencies (required)
 * item.udi 0..* MS
-
-* insert CodeableConceptRule(item.bodySite , 0..1, MS)
-* insert CodeableConceptRule(item.subSite , 0..1, MS)
+* insert CodeableConceptRule(item.bodySite, 0..1, MS)
+* item.bodySite from BodySiteVS (required)
+* insert CodeableConceptRule(item.subSite, 0..1, MS)
+* item.subSite from SubSiteVS (required)
 
 * item.detail 0..* MS
 * item.detail.sequence 1..1 MS
-
-* insert CodeableConceptRule(item.detail.productOrService , 1..1, MS)
-
+* insert CodeableConceptRule(item.detail.productOrService, 1..1, MS)
+* item.detail.productOrService from SocialHealthAuthorityInterventionsVS (required)
+* item.detail.revenue 0..1 MS
+* insert CodeableConceptRule(item.detail.revenue, 0..1, MS)
+* item.detail.revenue from http://hl7.org/fhir/ValueSet/ex-revenue-center (required)
+* item.detail.category 0..1 MS
+* insert CodeableConceptRule(item.detail.category, 0..1, MS)
+* item.detail.category from http://hl7.org/fhir/ValueSet/ex-benefitcategory (required)
+* item.detail.modifier 0..* MS
+* insert CodeableConceptRule(item.detail.modifier, 0..1, MS)
+* item.detail.modifier from http://hl7.org/fhir/ValueSet/claim-modifiers (required)
+* item.detail.programCode 0..* MS
+* insert CodeableConceptRule(item.detail.programCode, 0..1, MS)
+* item.detail.programCode from http://hl7.org/fhir/ValueSet/ex-program-code (required)
 * item.detail.quantity 1..1 MS
 * item.detail.unitPrice 1..1 MS
 * item.detail.net 1..1 MS
@@ -115,9 +171,20 @@ Description: "This profile defines constraints on the Claim resource for use wit
 
 * item.detail.subDetail 0..* MS
 * item.detail.subDetail.sequence 1..1 MS
-
-* insert CodeableConceptRule(item.detail.subDetail.productOrService , 1..1, MS)
-
+* insert CodeableConceptRule(item.detail.subDetail.productOrService, 1..1, MS)
+* item.detail.subDetail.productOrService from SocialHealthAuthorityInterventionsVS (required)
+* item.detail.subDetail.revenue 0..1 MS
+* insert CodeableConceptRule(item.detail.subDetail.revenue, 0..1, MS)
+* item.detail.subDetail.revenue from http://hl7.org/fhir/ValueSet/ex-revenue-center (required)
+* item.detail.subDetail.category 0..1 MS
+* insert CodeableConceptRule(item.detail.subDetail.category, 0..1, MS)
+* item.detail.subDetail.category from http://hl7.org/fhir/ValueSet/ex-benefitcategory (required)
+* item.detail.subDetail.modifier 0..* MS
+* insert CodeableConceptRule(item.detail.subDetail.modifier, 0..1, MS)
+* item.detail.subDetail.modifier from http://hl7.org/fhir/ValueSet/claim-modifiers (required)
+* item.detail.subDetail.programCode 0..* MS
+* insert CodeableConceptRule(item.detail.subDetail.programCode, 0..1, MS)
+* item.detail.subDetail.programCode from http://hl7.org/fhir/ValueSet/ex-program-code (required)
 * item.detail.subDetail.quantity 1..1 MS
 * item.detail.subDetail.unitPrice 1..1 MS
 * item.detail.subDetail.net 1..1 MS
@@ -141,7 +208,7 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "http://terminology.hl7.org/CodeSystem/claim-type"
+* type.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-type-cs"
 * type.coding[0].code = #institutional
 * type.coding[0].display = "Institutional"
 
@@ -177,10 +244,10 @@ Description: "An example Claim Response resource for Kenya eClaims Preauthorizat
 * careTeam[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
 * careTeam[0].provider = Reference(Practitioner/PRA-001)
-* careTeam[0].role.coding[0].system = "http://terminology.hl7.org/CodeSystem/claimcareteamrole"
-* careTeam[0].role.coding[0].code = #primary
-* careTeam[0].role.coding[0].display = "Primary Provider"
-* careTeam[0].qualification.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0360"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].code = #PRIMARY
+* careTeam[0].role.coding[0].display = "Primary provider"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/eclaims/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MD
 * careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 

@@ -30,10 +30,6 @@ Description: "An example of a Preauthorization that was canceled by request."
 * item[0].adjudication[0].category.coding.code = #benefit
 * item[0].adjudication[0].category.coding.display = "Benefit Amount"
 * item[0].adjudication[0].category.text = "benefit"
-* item[0].adjudication[0].reason.coding.system = "http://terminology.hl7.org/CodeSystem/adjudication-reason"
-* item[0].adjudication[0].reason.coding.code = #ar-excl
-* item[0].adjudication[0].reason.coding.display = "Auto Approved"
-* item[0].adjudication[0].reason.text = "Auto Approved."
 * item[0].adjudication[0].amount.value = 11200
 * item[0].adjudication[0].amount.currency = #KES
 * item[0].adjudication[0].value = 0

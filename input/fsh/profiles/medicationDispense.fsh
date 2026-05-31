@@ -25,6 +25,8 @@ Description: "This profile defines constraints on the MedicationDispense resourc
 
 // Status reason
 * statusReason[x] 0..1 MS
+* statusReasonCodeableConcept 0..1 MS
+* insert CodeableConceptRule(statusReasonCodeableConcept, 0..1, MS)
 * statusReasonCodeableConcept from http://hl7.org/fhir/ValueSet/medicationdispense-status-reason (required)
 
 // Performer
