@@ -7,6 +7,7 @@ Description: "This profile defines constraints on the PaymentNotice resource for
 * id 1..1 MS
 * meta 1..1 MS
 * meta.profile 1..* MS
+* meta.tag from http://hl7.org/fhir/ValueSet/common-tags (required)
 
 * implicitRules 0..1
 

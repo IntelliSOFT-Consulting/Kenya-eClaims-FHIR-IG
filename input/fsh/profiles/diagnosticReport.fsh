@@ -13,6 +13,7 @@ Description: "This profile defines constraints on the DiagnosticReport resource 
 // Category
 * category 1..* MS
 * insert CodeableConceptRule(category, 1..1, MS)
+* category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (required)
 
 // Code — LOINC-based, not SNOMED CT
 * code 1..1 MS

@@ -20,6 +20,7 @@ Description: "This profile defines constraints on the Encounter resource for use
 // Service type
 * serviceType 0..1 MS
 * insert CodeableConceptRule(serviceType, 0..1, MS)
+* serviceType from http://hl7.org/fhir/ValueSet/service-type (required)
 
 // Priority
 * priority 0..1 MS
@@ -33,6 +34,29 @@ Description: "This profile defines constraints on the Encounter resource for use
 * period 1..1 MS
 * period.start 1..1 MS
 * period.end 0..1
+
+// Type
+* type 0..* MS
+* insert CodeableConceptRule(type, 0..1, MS)
+* type from http://hl7.org/fhir/ValueSet/encounter-type (required)
+
+// Hospitalization
+* hospitalization 0..1 MS
+* hospitalization.reAdmission 0..1 MS
+* insert CodeableConceptRule(hospitalization.reAdmission, 0..1, MS)
+* hospitalization.reAdmission from http://terminology.hl7.org/ValueSet/v2-0092 (required)
+* hospitalization.dietPreference 0..* MS
+* insert CodeableConceptRule(hospitalization.dietPreference, 0..1, MS)
+* hospitalization.dietPreference from http://hl7.org/fhir/ValueSet/encounter-diet (required)
+* hospitalization.dischargeDisposition 0..1 MS
+* insert CodeableConceptRule(hospitalization.dischargeDisposition, 0..1, MS)
+* hospitalization.dischargeDisposition from http://hl7.org/fhir/ValueSet/encounter-discharge-disposition (required)
+
+// Location
+* location 0..* MS
+* location.physicalType 0..1 MS
+* insert CodeableConceptRule(location.physicalType, 0..1, MS)
+* location.physicalType from http://hl7.org/fhir/ValueSet/location-physical-type (required)
 
 // Service provider
 * insert ReferenceRule(serviceProvider, EClaimsOrganization, 1..1)

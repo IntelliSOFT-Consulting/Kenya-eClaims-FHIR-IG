@@ -1,6 +1,6 @@
 
 ValueSet: ConditionClinicalStatusVS
-Id: condition-clinical-status-vs
+Id: eclaims-condition-clinical-status-vs
 Title: "Condition Clinical Status ValueSet"
 Description: "ValueSet for condition clinical status codes (MOH-Kenya OCL: CONDITION-CLINICAL-STATUS)"
 * ^status = #active
@@ -9,7 +9,7 @@ Description: "ValueSet for condition clinical status codes (MOH-Kenya OCL: CONDI
 
 
 ValueSet: ConditionVerificationStatusVS
-Id: condition-verification-status-vs
+Id: eclaims-condition-verification-status-vs
 Title: "Condition Verification Status ValueSet"
 Description: "ValueSet for condition verification status codes (MOH-Kenya OCL: CONDITION-VERIFICATION-STATUS)"
 * ^status = #active
@@ -18,25 +18,25 @@ Description: "ValueSet for condition verification status codes (MOH-Kenya OCL: C
 
 
 ValueSet: ConditionCategoryVS
-Id: condition-category-vs
+Id: eclaims-condition-category-vs
 Title: "Condition Category ValueSet"
 Description: "ValueSet for condition category codes (MOH-Kenya OCL: CONDITION-CATEGORY)"
 * ^status = #active
 * ^experimental = false
 * include codes from system ConditionCategoryCS
 
-
 ValueSet: ConditionCodesVS
-Id: condition-codes-vs
+Id: eclaims-condition-codes-vs
 Title: "Condition Codes ValueSet"
-Description: "ValueSet for condition/diagnosis codes (MOH-Kenya: CONDITION-CODES)"
+Description: "Codes for clinical conditions and diagnoses. References ICD-10 pending population of the MOH-KENYA CONDITION-CODES OCL collection."
+* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/condition-codes-vs"
 * ^status = #active
 * ^experimental = false
-* include codes from system ConditionCodesCS
+* include codes from system http://hl7.org/fhir/sid/icd-10
 
 
 ValueSet: EncounterStatusVS
-Id: encounter-status-vs
+Id: claims-encounter-status-vs
 Title: "Encounter Status ValueSet"
 Description: "ValueSet for encounter status codes (MOH-Kenya OCL: ENCOUNTER-STATUS)"
 * ^status = #active
@@ -45,7 +45,7 @@ Description: "ValueSet for encounter status codes (MOH-Kenya OCL: ENCOUNTER-STAT
 
 
 ValueSet: EpisodeOfCareStatusVS
-Id: episode-of-care-status-vs
+Id: eclaims-episode-of-care-status-vs
 Title: "Episode of Care Status ValueSet"
 Description: "ValueSet for episode of care status codes (MOH-Kenya OCL: EPISODE-OF-CARE-STATUS)"
 * ^status = #active
@@ -54,7 +54,7 @@ Description: "ValueSet for episode of care status codes (MOH-Kenya OCL: EPISODE-
 
 
 ValueSet: EpisodeOfCareTypeVS
-Id: episode-of-care-type-vs
+Id: eclaims-episode-of-care-type-vs
 Title: "Episode of Care Type ValueSet"
 Description: "ValueSet for episode of care type codes (MOH-Kenya OCL: EPISODE-OF-CARE-TYPE)"
 * ^status = #active
@@ -63,7 +63,7 @@ Description: "ValueSet for episode of care type codes (MOH-Kenya OCL: EPISODE-OF
 
 
 ValueSet: GenericProductsVS
-Id: generic-products-vs
+Id: eclaims-generic-products-vs
 Title: "Generic Products ValueSet"
 Description: "ValueSet for generic pharmaceutical products (MOH-Kenya: GenericProducts)"
 * ^status = #active

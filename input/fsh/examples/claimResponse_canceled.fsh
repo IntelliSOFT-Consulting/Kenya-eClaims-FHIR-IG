@@ -26,13 +26,22 @@ Description: "An example of a Preauthorization that was canceled by request."
 * request.reference = "Claim/a7dcd571-d8a2-483a-8a45-e3c8bcbff8b8"
 
 * item[0].itemSequence = 1
+* item[0].adjudication[0].category.coding.system = "http://terminology.hl7.org/CodeSystem/adjudication"
+* item[0].adjudication[0].category.coding.code = #benefit
+* item[0].adjudication[0].category.coding.display = "Benefit Amount"
 * item[0].adjudication[0].category.text = "benefit"
+* item[0].adjudication[0].reason.coding.system = "http://terminology.hl7.org/CodeSystem/adjudication-reason"
+* item[0].adjudication[0].reason.coding.code = #ar-excl
+* item[0].adjudication[0].reason.coding.display = "Auto Approved"
 * item[0].adjudication[0].reason.text = "Auto Approved."
 * item[0].adjudication[0].amount.value = 11200
 * item[0].adjudication[0].amount.currency = #KES
 * item[0].adjudication[0].value = 0
 
-* total[0].category.text = "benefit" 
+* total[0].category.coding.system = "http://terminology.hl7.org/CodeSystem/adjudication"
+* total[0].category.coding.code = #benefit
+* total[0].category.coding.display = "Benefit Amount"
+* total[0].category.text = "benefit"
 * total[0].amount.value = 11200
 * total[0].amount.currency = #KES
 

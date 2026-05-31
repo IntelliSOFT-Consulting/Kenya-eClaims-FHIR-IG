@@ -1,15 +1,14 @@
 
 ValueSet: CoverageTypeVS
-Id: coverage-type-vs
+Id: eclaims-coverage-type-vs
 Title: "Coverage Type ValueSet"
 Description: "ValueSet for insurance coverage type codes (MOH-Kenya OCL: COVERAGE-TYPE)"
 * ^status = #active
 * ^experimental = false
 * include codes from system CoverageTypeCS
 
-
 ValueSet: CoverageClassVS
-Id: coverage-class-vs
+Id: eclaims-coverage-class-vs
 Title: "Coverage Class ValueSet"
 Description: "ValueSet for insurance coverage class codes (MOH-Kenya OCL: COVERAGE-CLASS)"
 * ^status = #active
@@ -18,7 +17,7 @@ Description: "ValueSet for insurance coverage class codes (MOH-Kenya OCL: COVERA
 
 
 ValueSet: CoverageMemberStatusVS
-Id: coverage-member-status-vs
+Id: eclaims-coverage-member-status-vs
 Title: "Coverage Member Status ValueSet"
 Description: "ValueSet for the status of a coverage member (MOH-Kenya OCL: COVERAGE-MEMBER-STATUS)"
 * ^status = #active
@@ -27,7 +26,7 @@ Description: "ValueSet for the status of a coverage member (MOH-Kenya OCL: COVER
 
 
 ValueSet: CoveragePlanTypeVS
-Id: coverage-plan-type-vs
+Id: eclaims-coverage-plan-type-vs
 Title: "Coverage Plan Type ValueSet"
 Description: "ValueSet for coverage plan type codes (MOH-Kenya OCL: COVERAGE-PLAN-TYPE)"
 * ^status = #active
@@ -36,7 +35,7 @@ Description: "ValueSet for coverage plan type codes (MOH-Kenya OCL: COVERAGE-PLA
 
 
 ValueSet: PaymentMethodVS
-Id: payment-method-vs
+Id: eclaims-payment-method-vs
 Title: "Payment Method ValueSet"
 Description: "ValueSet for payment method codes (MOH-Kenya OCL: PAYMENT-METHOD)"
 * ^status = #active
@@ -45,7 +44,7 @@ Description: "ValueSet for payment method codes (MOH-Kenya OCL: PAYMENT-METHOD)"
 
 
 ValueSet: RelatedClaimRelationshipVS
-Id: related-claim-relationship-vs
+Id: eclaims-related-claim-relationship-vs
 Title: "Related Claim Relationship ValueSet"
 Description: "ValueSet for related claim relationship codes (MOH-Kenya OCL: RELATED-CLAIM-RELATIONSHIP)"
 * ^status = #active
