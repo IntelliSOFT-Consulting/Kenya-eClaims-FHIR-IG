@@ -24,15 +24,15 @@ Description: "Profile for the response to a Claim or Preauthorization, including
 
 * payeeType 0..1 MS
 * insert CodeableConceptRule(payeeType, 0..1, MS)
-* payeeType from http://hl7.org/fhir/ValueSet/payeetype (required)
+* payeeType from ClaimResponsePayeeTypeVS (required)
 
 * fundsReserve 0..1 MS
 * insert CodeableConceptRule(fundsReserve, 0..1, MS)
-* fundsReserve from http://hl7.org/fhir/ValueSet/fundsreserve (required)
+* fundsReserve from ClaimResponseFundsReserveVS (required)
 
 * formCode 0..1 MS
 * insert CodeableConceptRule(formCode, 0..1, MS)
-* formCode from http://hl7.org/fhir/ValueSet/forms (required)
+* formCode from ClaimResponseFormsVS (required)
 
 * item 1..* MS
 * item.itemSequence 1..1 MS
@@ -88,7 +88,7 @@ Description: "Profile for the response to a Claim or Preauthorization, including
 * error 0..* MS
 * error.code 1..1 MS
 * insert CodeableConceptRule(error.code, 1..1, MS)
-* error.code from http://hl7.org/fhir/ValueSet/adjudication-error (required)
+* error.code from ClaimResponseAdjudicationErrorVS (required)
 
 * total 0..* MS
 * total.category 1..1 MS

@@ -84,6 +84,8 @@ Description: "This profile defines constraints on the MedicationRequest resource
 * insert CodeableConceptRule(dosageInstruction.additionalInstruction, 0..1, MS)
 * dosageInstruction.additionalInstruction from DosageAdditionalInstructionVS (required)
 * dosageInstruction.asNeeded[x] 0..1 MS
+* dosageInstruction.asNeededCodeableConcept 0..1 MS
+* insert CodeableConceptRule(dosageInstruction.asNeededCodeableConcept, 0..1, MS)
 * dosageInstruction.asNeededCodeableConcept from AsNeededReasonVS (required)
 * dosageInstruction.site 0..1 MS
 * insert CodeableConceptRule(dosageInstruction.site, 0..1, MS)
@@ -116,6 +118,8 @@ Description: "This profile defines constraints on the MedicationRequest resource
 // Substitution
 * substitution 0..1 MS
 * substitution.allowed[x] 1..1 MS
+* substitution.allowedCodeableConcept 1..1 MS
+* insert CodeableConceptRule(substitution.allowedCodeableConcept, 1..1, MS)
 * substitution.allowedCodeableConcept from http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode (required)
 * substitution.reason 0..1 MS
 * insert CodeableConceptRule(substitution.reason, 0..1, MS)

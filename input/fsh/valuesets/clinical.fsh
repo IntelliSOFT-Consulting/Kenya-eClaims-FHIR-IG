@@ -29,7 +29,6 @@ ValueSet: ConditionCodesVS
 Id: eclaims-condition-codes-vs
 Title: "Condition Codes ValueSet"
 Description: "Codes for clinical conditions and diagnoses. References ICD-10 pending population of the MOH-KENYA CONDITION-CODES OCL collection."
-* ^url = "https://nshr-uat.sha.go.ke/fhir/ValueSet/condition-codes-vs"
 * ^status = #active
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/sid/icd-10

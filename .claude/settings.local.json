@@ -19,7 +19,8 @@
       "Read(//tmp/**)",
       "Read(//private/tmp/**)",
       "Bash(java -jar input-cache/publisher.jar -?)",
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\([c['code'] for c in d.get\\('concept',[]\\)]\\)\")"
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\([c['code'] for c in d.get\\('concept',[]\\)]\\)\")",
+      "Bash(python3 -)"
     ],
     "additionalDirectories": [
       "/Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/temp"

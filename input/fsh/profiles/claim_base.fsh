@@ -9,6 +9,9 @@ used across the entire eClaims ecosystem.
 """
 
 // Identifiers & Metadata
+* meta 1..1 MS
+* meta.profile 1..* MS
+* meta.tag from http://hl7.org/fhir/ValueSet/common-tags (required)
 * insert IdentifierRequiredRule(identifier, 1..*)
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/fm-status (required)
@@ -52,7 +55,7 @@ used across the entire eClaims ecosystem.
 * careTeam.role from ClaimCareTeamRoleVS (required)
 * careTeam.qualification 0..1 MS
 * insert CodeableConceptRule(careTeam.qualification, 0..1, MS)
-* careTeam.qualification from http://hl7.org/fhir/ValueSet/provider-qualification (required)
+* careTeam.qualification from ProviderQualificationVS (required)
 
 // Supporting info
 * supportingInfo 0..* MS

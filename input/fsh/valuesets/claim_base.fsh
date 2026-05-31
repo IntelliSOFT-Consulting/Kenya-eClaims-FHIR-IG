@@ -29,10 +29,11 @@ Description: "ValueSet for sub-site codes used in Kenya claims (MOH-Kenya OCL: S
 ValueSet: ClaimDiagnosisVS
 Id: eclaims-claim-diagnosis-vs
 Title: "Claim Diagnosis ValueSet"
-Description: "ValueSet for diagnosis codes used in Kenya eClaims, based on ICD-11 categories"
+Description: "ValueSet for diagnosis codes used in Kenya eClaims. Includes both Kenya-defined ICD-11 category codes and the full ICD-11 MMS code system for individual clinical diagnoses."
 * ^status = #active
 * ^experimental = false
 * include codes from system ClaimDiagnosisCodeableConceptCS
+* include codes from system http://id.who.int/icd/release/11/mms
 
 
 ValueSet: WaiverTypeVS

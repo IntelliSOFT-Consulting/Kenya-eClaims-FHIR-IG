@@ -87,6 +87,27 @@ Description: "Codes for the specific workflow state of a claim in Kenya eClaims.
 * #under-review "Under Review"
 
 
+CodeSystem: ProviderQualificationCS
+Id: eclaims-provider-qualification-cs
+Title: "Provider Qualification Code System"
+Description: "Qualification and credential codes for healthcare providers in Kenya eClaims. Codes align with HL7 v2 Table 0360 to ensure interoperability."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #MD "Doctor of Medicine"
+* #MBChB "Bachelor of Medicine and Bachelor of Surgery (MBChB)"
+* #MBBS "Bachelor of Medicine and Bachelor of Surgery (MBBS)"
+* #DO "Doctor of Osteopathy"
+* #NP "Nurse Practitioner"
+* #RN "Registered Nurse"
+* #PharmD "Doctor of Pharmacy"
+* #BPharm "Bachelor of Pharmacy"
+* #PA "Physician Assistant"
+* #ClinO "Clinical Officer"
+* #CO "Community Health Officer"
+
+
 CodeSystem: ClaimExpiryCS
 Id: claim-expiry-cs
 Title: "Claim Expiry Code System"
