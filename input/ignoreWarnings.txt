@@ -1,19 +1,19 @@
 == Suppressed Messages ==
 
-# Base FHIR elements that bind to experimental value sets (fundsReserve, payee.type)
-# These are standard FHIR R4 base bindings that cannot be changed without overriding the binding
-The definition for the element 'Claim.fundsReserve' binds to the value set 'http://hl7.org/fhir/ValueSet/fundsreserve' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Claim.payee.type' binds to the value set 'http://hl7.org/fhir/ValueSet/payeetype' which is experimental, but this structure is not labeled as experimental
-
 # No examples for profiles/extensions - this IG is in CI-Build draft status
 The Implementation Guide contains no examples for this extension
 The Implementation Guide contains no examples for this profile
 
-# MustSupport slice warning for medication dispense
-The slice 'asNeededCodeableConcept' on path 'MedicationDispense.dosageInstruction.asNeeded[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+# Kenya eClaims identifier NamingSystem — local identifier systems, no NamingSystem resources needed
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number'
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/condition-number'
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/coverage-number'
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/encounter-number'
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/sha-number'
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/national-id'
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/payment-notice-number'
+No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/provider-number'
 
-# ICD-11 is an external terminology not loaded in the IG validator
-A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be found, so the code cannot be validated
-
-# Kenya eClaims identifier NamingSystem — local identifier system, no NamingSystem resource needed
-No definition could be found for URL value 'https://fhir.dha.go.ke/eclaims/Identifier/claim-number'
+# ICD-10 is a large external terminology; the IG terminology server cannot expand it to validate membership
+# in ConditionCodesVS, which includes all codes from http://hl7.org/fhir/sid/icd-10
+None of the codings provided are in the value set 'Condition Codes ValueSet'

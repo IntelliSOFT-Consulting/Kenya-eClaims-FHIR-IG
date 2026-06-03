@@ -11,7 +11,7 @@ Description: "An example of a Preauthorization that was canceled by request."
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * created = "2025-10-03T07:36:24+00:00"
 
-* extension[claimExpiry].valueCodeableConcept.coding.system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-expiry-cs"
+* extension[claimExpiry].valueCodeableConcept.coding.system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-expiry-cs"
 * extension[claimExpiry].valueCodeableConcept.coding.code = #expiry-date
 * extension[claimExpiry].valueCodeableConcept.coding.display = "Expiry Date"
 
@@ -19,7 +19,7 @@ Description: "An example of a Preauthorization that was canceled by request."
 * insurer = Reference(Organization/sha-insurer)
 * request = Reference(Claim/ae044c1d-9ecb-4294-be9b-0702e7892596)
 
-* extension[claimState].valueCodeableConcept.coding.system = "https://fhir.dha.go.ke/eclaims/CodeSystem/claim-state-cs"
+* extension[claimState].valueCodeableConcept.coding.system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-state-cs"
 * extension[claimState].valueCodeableConcept.coding.code = #canceled
 * extension[claimState].valueCodeableConcept.coding.display = "Canceled"
 

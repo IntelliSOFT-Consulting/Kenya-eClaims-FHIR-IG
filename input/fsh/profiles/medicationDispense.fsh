@@ -73,6 +73,8 @@ Description: "This profile defines constraints on the MedicationDispense resourc
 
 // As needed — local ValueSet (no SNOMED CT)
 * dosageInstruction.asNeeded[x] 0..1 MS
+* dosageInstruction.asNeededCodeableConcept 0..1 MS
+* insert CodeableConceptRule(dosageInstruction.asNeededCodeableConcept, 0..1, MS)
 * dosageInstruction.asNeededCodeableConcept from AsNeededReasonVS (required)
 
 // Site — Kenya body site ValueSet (no SNOMED CT)

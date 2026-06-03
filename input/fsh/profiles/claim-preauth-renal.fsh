@@ -1,16 +1,16 @@
 Profile: KenyaRenalPreauth
-Parent: KenyaClaimBase
+Parent: Claim
 Id: ke-eclaims-renalpreauth
 Title: "Renal Preauthorization"
 Description: """
 This profile is for requesting authorization for renal dialysis sessions.
 """
 
-* use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
-// * subType = OrgNameClaimTypeCS#RENAL
+* insert KenyaClaimBaseRules
 
-// Must haves
+* use = #preauthorization
+* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#institutional
+
 * extension contains SessionExpectedDate named sessionExpectedDate 1..1 MS
 * extension[sessionExpectedDate] ^short = "Date of the dialysis session"
 

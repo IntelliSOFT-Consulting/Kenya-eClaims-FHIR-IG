@@ -1,14 +1,15 @@
 Profile: KenyaOpticalPreauth
-Parent: KenyaClaimBase
+Parent: Claim
 Id: ke-eclaims-opticalpreauth
 Title: "Optical Preauthorization"
 Description: """
 This profile is for Optical Services.
 """
 
+* insert KenyaClaimBaseRules
+
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#vision
-// * subType = OrgNameClaimTypeCS#OPTICAL
+* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#vision
 
 * extension contains LensPrescription named lensPrescription 1..1 MS
 * extension contains Replacement named replacement 1..1 MS

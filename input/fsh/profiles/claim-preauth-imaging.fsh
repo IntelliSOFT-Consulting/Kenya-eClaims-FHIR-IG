@@ -1,15 +1,15 @@
 Profile: KenyaImagingPreauth
-Parent: KenyaClaimBase
+Parent: Claim
 Id: ke-eclaims-imagingpreauth
 Title: "Imaging Preauthorization"
 Description: """
 This profile is for authorizing high-cost Diagnostic Imaging.
 """
 
-* use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
-// * subType = OrgNameClaimTypeCS#IMAGING
+* insert KenyaClaimBaseRules
 
-// Must haves
+* use = #preauthorization
+* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#institutional
+
 * extension contains ClinicalIndications named clinicalIndications 1..1 MS
 * extension contains Investigations named investigations 1..1 MS

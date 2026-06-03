@@ -1,15 +1,15 @@
 Profile: KenyaOncologyPreauth
-Parent: KenyaClaimBase
+Parent: Claim
 Id: ke-eclaims-oncologypreauth
 Title: "Oncology Preauthorization"
 Description: """
 This profile is for authorizing Cancer Treatment.
 """
 
-// Must haves
+* insert KenyaClaimBaseRules
+
 * use = #preauthorization
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
-// * subType = OrgNameClaimTypeCS#ONCOLOGY
+* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#institutional
 
 * extension contains CarcinomaStaging named carcinomaStaging 1..1 MS
 * extension contains Metastases named metastases 1..1 MS
