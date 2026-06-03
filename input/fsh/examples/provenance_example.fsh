@@ -6,7 +6,7 @@ Description: "An example of a Provenance record tracking the submission of an in
 
 * id = "provenance-claim-submission-001"
 
-* meta.profile = "https://fhir.dha.go.ke/eclaims/StructureDefinition/ke-eclaims-provenance"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-provenance"
 * meta.tag.system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag.code = #actionable
 * meta.tag.display = "Actionable"

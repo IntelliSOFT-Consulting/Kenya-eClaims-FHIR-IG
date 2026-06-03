@@ -6,7 +6,7 @@
 
 | Property | Value |
 |---|---|
-| **Canonical URL** | `https://fhir.dha.go.ke/eclaims` |
+| **Canonical URL** | `https://nshr-uat.sha.go.ke/fhir` |
 | **Version** | 0.1.0 |
 | **Status** | Draft |
 | **FHIR Version** | R4 (4.0.1) |

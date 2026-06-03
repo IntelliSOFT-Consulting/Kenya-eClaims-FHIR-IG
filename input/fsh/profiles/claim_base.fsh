@@ -44,7 +44,7 @@ used across the entire eClaims ecosystem.
 * payee 1..1 MS
 * payee.type 1..1 MS
 * insert CodeableConceptRule(payee.type, 1..1, MS)
-* payee.type from http://hl7.org/fhir/ValueSet/payeetype (required)
+* payee.type from ClaimResponsePayeeTypeVS (required)
 
 // Care team
 * careTeam 0..* MS
@@ -95,7 +95,7 @@ used across the entire eClaims ecosystem.
 // Funds reserve
 * fundsReserve 0..1 MS
 * insert CodeableConceptRule(fundsReserve, 0..1, MS)
-* fundsReserve from http://hl7.org/fhir/ValueSet/fundsreserve (required)
+* fundsReserve from ClaimResponseFundsReserveVS (required)
 
 // Line Items
 * item 1..* MS
