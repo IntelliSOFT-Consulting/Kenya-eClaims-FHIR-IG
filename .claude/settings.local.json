@@ -22,7 +22,8 @@
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\([c['code'] for c in d.get\\('concept',[]\\)]\\)\")",
       "Bash(python3 -)",
       "Bash(grep -v \"^[[:space:]]*$\")",
-      "Bash(printf '\\\\n* #NC72.5 \"Fracture of shaft of femur\"\\\\n* #9C80.0 \"Myopia\"\\\\n* #GB61 \"Chronic kidney disease\"\\\\n* #2C6Y \"Other specified malignant neoplasms of breast\"\\\\n* #DC80 \"Appendicitis\"' >> /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/input/fsh/codeSystems/claim_base.fsh)"
+      "Bash(printf '\\\\n* #NC72.5 \"Fracture of shaft of femur\"\\\\n* #9C80.0 \"Myopia\"\\\\n* #GB61 \"Chronic kidney disease\"\\\\n* #2C6Y \"Other specified malignant neoplasms of breast\"\\\\n* #DC80 \"Appendicitis\"' >> /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/input/fsh/codeSystems/claim_base.fsh)",
+      "Bash(printf '\\\\n* #CA0Z \"Acute upper respiratory infection, unspecified\"\\\\n* #5A11 \"Type 2 diabetes mellitus\"' >> /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/input/fsh/codeSystems/claim_base.fsh && tail -8 /Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/input/fsh/codeSystems/claim_base.fsh)"
     ],
     "additionalDirectories": [
       "/Users/daviemukungi/SoftwareDev/FHIR/Kenya-eClaims-FHIR-IG/temp",

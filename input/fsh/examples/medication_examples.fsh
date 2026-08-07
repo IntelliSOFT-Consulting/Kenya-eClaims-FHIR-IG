@@ -27,9 +27,9 @@ Description: "An example MedicationRequest conforming to EClaimsMedicationReques
 * requester.reference = "Practitioner/ECLM-PRA-001"
 * requester.display = "Dr. James Ochieng"
 
-* reasonCode[0].coding[0].system = "http://hl7.org/fhir/sid/icd-10"
-* reasonCode[0].coding[0].code = #E11.9
-* reasonCode[0].coding[0].display = "Type 2 diabetes mellitus : Without complications"
+* reasonCode[0].coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* reasonCode[0].coding[0].code = #5A11
+* reasonCode[0].coding[0].display = "insulin resistant diabetes"
 
 * dosageInstruction[0].text = "Take one tablet twice daily with meals"
 
@@ -90,8 +90,8 @@ Description: "An example MedicationStatement conforming to EClaimsMedicationStat
 
 * effectivePeriod.start = "2025-11-02"
 
-* reasonCode[0].coding[0].system = "http://hl7.org/fhir/sid/icd-10"
-* reasonCode[0].coding[0].code = #E11.9
-* reasonCode[0].coding[0].display = "Type 2 diabetes mellitus : Without complications"
+* reasonCode[0].coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* reasonCode[0].coding[0].code = #5A11
+* reasonCode[0].coding[0].display = "insulin resistant diabetes"
 
 * reasonReference[0] = Reference(Condition/ECLM-COND-001)

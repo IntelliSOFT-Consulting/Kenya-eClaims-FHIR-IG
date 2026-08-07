@@ -3126,3 +3126,4 @@ Description: "ICD-11 codes for mortality and morbidity statistics. Source: MOH-K
 * #GB61 "Chronic kidney disease"
 * #2C6Y "Other specified malignant neoplasms of breast"
 * #DC80 "Appendicitis"
+* #CA0Z "Acute upper respiratory infection, unspecified"

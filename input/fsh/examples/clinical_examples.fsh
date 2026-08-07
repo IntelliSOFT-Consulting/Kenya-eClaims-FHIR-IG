@@ -54,8 +54,8 @@ Description: "An example Condition resource conforming to EClaimsCondition."
 * severity.coding[0].code = #MODERATE
 * severity.coding[0].display = "Moderate"
 
-* code.coding[0].system = "http://hl7.org/fhir/sid/icd-10"
-* code.coding[0].code = #J06.9
+* code.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* code.coding[0].code = #CA0Z
 * code.coding[0].display = "Acute upper respiratory infection, unspecified"
 
 * subject = Reference(Patient/ECLM-PT-001)

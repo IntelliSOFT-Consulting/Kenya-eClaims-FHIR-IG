@@ -28,10 +28,10 @@ Description: "ValueSet for condition category codes (MOH-Kenya OCL: CONDITION-CA
 ValueSet: ConditionCodesVS
 Id: eclaims-condition-codes-vs
 Title: "Condition Codes ValueSet"
-Description: "Codes for clinical conditions and diagnoses. References ICD-10 pending population of the MOH-KENYA CONDITION-CODES OCL collection."
+Description: "Codes for clinical conditions and diagnoses using the local ICD-11 MMS code system (MOH-KENYA ICD-11 OCL collection)."
 * ^status = #active
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/sid/icd-10
+* include codes from system ICD11CodesCS
 
 
 ValueSet: EncounterStatusVS
@@ -68,3 +68,12 @@ Description: "ValueSet for generic pharmaceutical products (MOH-Kenya: GenericPr
 * ^status = #active
 * ^experimental = false
 * include codes from system GenericProductsCS
+
+
+ValueSet: DiagnosticReportCodesVS
+Id: eclaims-diagnostic-report-codes-vs
+Title: "Diagnostic Report Codes ValueSet"
+Description: "ValueSet for diagnostic report types used in Kenya eClaims (laboratory, radiology, pathology panels)."
+* ^status = #active
+* ^experimental = false
+* include codes from system DiagnosticReportCodesCS
