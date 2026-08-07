@@ -3,10 +3,10 @@
 # │  Publisher: Digital Health Agency of Kenya / IntelliSOFT Consulting                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: fhir.kenyaClaimsIG 
-canonical: https://nshr-uat.sha.go.ke/fhir
-name: KenyaEClaimsFHIRIG
-title: Kenya eClaims FHIR Implementation Guide
+id: ke.fhir.eclaims
+canonical: https://fhir.dha.go.ke/ig/eclaims
+name: KenyaEClaims
+title: Kenya eClaims Implementation Guide
 description: >-
   The Kenya eClaims FHIR Implementation Guide defines standardized FHIR R4 profiles,
   extensions, value sets, and terminologies for electronic claims submission,
@@ -22,7 +22,7 @@ license: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#KE "Kenya"
 
 publisher:
-  name: Digital Health Agency of Kenya
+  name: Digital Health Agency (DHA), Kenya
   url: https://dha.go.ke
   email: interoperability@dha.go.ke
 

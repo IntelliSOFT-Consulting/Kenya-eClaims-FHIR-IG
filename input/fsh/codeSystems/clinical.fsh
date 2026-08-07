@@ -3138,3 +3138,33 @@ Description: "Generic medicinal product codes from MOH PPB OCL."
 * #GE13095 "Betamethasone 0.05 %w/w/Clioquinol 1 %w/w/Gentamicin 0.1 %w/w/Tolnaftate 1 %w/w Topical Cream"
 * #GE13096 "Azelastine 5 mg/Mometasone 10 mg per 1spray Nasal Spray"
 
+
+
+CodeSystem: DiagnosticReportCodesCS
+Id: eclaims-diagnostic-report-codes-cs
+Title: "Diagnostic Report Codes Code System"
+Description: "Codes for diagnostic report types used in Kenya eClaims (laboratory, radiology, pathology, and other diagnostic panels)."
+* ^status = #active
+* ^content = #complete
+* ^experimental = false
+* ^caseSensitive = true
+* #CBC "Complete Blood Count Panel"
+* #LFT "Liver Function Tests Panel"
+* #RFT "Renal Function Tests Panel"
+* #LIPID "Lipid Profile Panel"
+* #UA "Urinalysis"
+* #BG "Blood Glucose"
+* #HBA1C "Glycated Haemoglobin (HbA1c)"
+* #TFT "Thyroid Function Tests Panel"
+* #MALARIA-RDT "Malaria Rapid Diagnostic Test"
+* #HIV-TEST "HIV Serology Test"
+* #SPUTUM-AFB "Sputum AFB Smear Microscopy"
+* #CHEST-XRAY "Chest X-Ray Report"
+* #ABDOMEN-US "Abdomen Ultrasound Report"
+* #PELVIS-US "Pelvis Ultrasound Report"
+* #CT-HEAD "CT Scan of the Head"
+* #MRI-BRAIN "MRI Brain Report"
+* #ECG "Electrocardiogram Report"
+* #ECHO "Echocardiogram Report"
+* #BIOPSY "Biopsy / Histopathology Report"
+* #ENDOSCOPY "Endoscopy Report"

@@ -32,9 +32,9 @@ Description: "An example DiagnosticReport conforming to EClaimsDiagnosticReport.
 * category[0].coding[0].code = #LAB
 * category[0].coding[0].display = "Laboratory"
 
-* code.coding[0].system = "http://loinc.org"
-* code.coding[0].code = #58410-2
-* code.coding[0].display = "CBC panel - Blood by Automated count"
+* code.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-diagnostic-report-codes-cs"
+* code.coding[0].code = #CBC
+* code.coding[0].display = "Complete Blood Count Panel"
 
 * subject = Reference(Patient/ECLM-PT-001)
 * encounter = Reference(Encounter/ECLM-ENC-001)

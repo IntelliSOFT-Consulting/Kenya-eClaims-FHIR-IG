@@ -15,10 +15,10 @@ Description: "This profile defines constraints on the DiagnosticReport resource 
 * insert CodeableConceptRule(category, 1..1, MS)
 * category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (required)
 
-// Code — LOINC-based, not SNOMED CT
+// Code — Kenya eClaims local diagnostic report codes
 * code 1..1 MS
 * insert CodeableConceptRule(code, 1..1, MS)
-* code from http://hl7.org/fhir/ValueSet/report-codes (required)
+* code from DiagnosticReportCodesVS (required)
 
 // Subject
 * insert ReferenceRule(subject, EClaimsPatient, 1..1)
