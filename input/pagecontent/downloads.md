@@ -12,7 +12,7 @@ The Kenya eClaims FHIR IG is published as a standard HL7 FHIR NPM package.
 |---|---|
 | **Package ID** | `fhir.kenyaClaimsIG` |
 | **Version** | `0.1.0` |
-| **Canonical URL** | `https://nshr-uat.sha.go.ke/fhir` |
+| **Canonical URL** | `https://fhir.dha.go.ke/fhir` |
 | **FHIR Version** | 4.0.1 |
 | **Status** | Draft |
 
@@ -59,7 +59,7 @@ java -jar validator_cli.jar \
   path/to/claim-bundle.json \
   -version 4.0.1 \
   -ig fhir.kenyaClaimsIG#0.1.0 \
-  -profile https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-claimbase
+  -profile https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-claimbase
 ```
 
 **Common validator flags:**

@@ -9,7 +9,7 @@ This profile is for Optical Services.
 * insert KenyaClaimBaseRules
 
 * use = #preauthorization
-* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#vision
+* type = https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs#vision
 
 * extension contains LensPrescription named lensPrescription 1..1 MS
 * extension contains Replacement named replacement 1..1 MS

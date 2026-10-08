@@ -14,5 +14,5 @@ This is the final request for payment sent after services are delivered.
 
 * related 0..* MS
 * related.relationship 1..1 MS
-* related.relationship = https://nshr-uat.sha.go.ke/fhir/CodeSystem/related-claim-relationship-cs#prior
+* related.relationship = https://fhir.dha.go.ke/terminology/CodeSystem/related-claim-relationship-cs#prior
 * related.claim 1..1 MS

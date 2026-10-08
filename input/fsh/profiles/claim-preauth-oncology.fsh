@@ -9,7 +9,7 @@ This profile is for authorizing Cancer Treatment.
 * insert KenyaClaimBaseRules
 
 * use = #preauthorization
-* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#institutional
+* type = https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs#institutional
 
 * extension contains CarcinomaStaging named carcinomaStaging 1..1 MS
 * extension contains Metastases named metastases 1..1 MS

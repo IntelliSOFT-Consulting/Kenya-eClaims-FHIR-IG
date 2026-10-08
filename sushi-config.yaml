@@ -4,7 +4,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 id: ke.fhir.eclaims
-canonical: https://fhir.dha.go.ke/ig/eclaims
+canonical: https://fhir.dha.go.ke/eclaims
 name: KenyaEClaims
 title: Kenya eClaims Implementation Guide
 description: >-

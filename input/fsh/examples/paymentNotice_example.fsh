@@ -24,12 +24,12 @@ Description: "An example PaymentNotice conforming to EClaimsPaymentNotice."
 
 * id = "ECLM-PN-001"
 
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-paymentnotice"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-paymentnotice"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/payment-notice-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/payment-notice-number"
 * identifier[0].value = "PN-2025-001234"
 
 * status = #active
