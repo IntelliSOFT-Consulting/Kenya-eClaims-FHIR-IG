@@ -9,7 +9,7 @@ This profile is for requesting authorization for renal dialysis sessions.
 * insert KenyaClaimBaseRules
 
 * use = #preauthorization
-* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#institutional
+* type = https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs#institutional
 
 * extension contains SessionExpectedDate named sessionExpectedDate 1..1 MS
 * extension[sessionExpectedDate] ^short = "Date of the dialysis session"

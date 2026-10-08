@@ -32,7 +32,7 @@ Description: "An example DiagnosticReport conforming to EClaimsDiagnosticReport.
 * category[0].coding[0].code = #LAB
 * category[0].coding[0].display = "Laboratory"
 
-* code.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-diagnostic-report-codes-cs"
+* code.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-diagnostic-report-codes-cs"
 * code.coding[0].code = #CBC
 * code.coding[0].display = "Complete Blood Count Panel"
 

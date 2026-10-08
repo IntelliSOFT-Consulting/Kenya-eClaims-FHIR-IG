@@ -6,7 +6,7 @@ Description: "An example Encounter resource conforming to EClaimsEncounter."
 
 * id = "ECLM-ENC-001"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/encounter-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/encounter-number"
 * identifier[0].value = "ENC-2025-001234"
 
 * status = #finished
@@ -35,7 +35,7 @@ Description: "An example Condition resource conforming to EClaimsCondition."
 
 * id = "ECLM-COND-001"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/condition-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/condition-number"
 * identifier[0].value = "COND-2025-001234"
 
 * clinicalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
@@ -46,15 +46,15 @@ Description: "An example Condition resource conforming to EClaimsCondition."
 * verificationStatus.coding[0].code = #confirmed
 * verificationStatus.coding[0].display = "Confirmed"
 
-* category[0].coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-category-cs"
+* category[0].coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/condition-category-cs"
 * category[0].coding[0].code = #ENCOUNTER-DIAGNOSIS
 * category[0].coding[0].display = "Encounter Diagnosis"
 
-* severity.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-severity-cs"
+* severity.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/condition-severity-cs"
 * severity.coding[0].code = #MODERATE
 * severity.coding[0].display = "Moderate"
 
-* code.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* code.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * code.coding[0].code = #CA0Z
 * code.coding[0].display = "Acute upper respiratory infection, unspecified"
 
@@ -76,7 +76,7 @@ Description: "An example EpisodeOfCare resource conforming to EClaimsEpisodeOfCa
 
 * status = #active
 
-* type[0].coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/episode-of-care-type-cs"
+* type[0].coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/episode-of-care-type-cs"
 * type[0].coding[0].code = #NON-COMMUNICABLE-DISEASE-PROGRAM
 * type[0].coding[0].display = "Non-Communicable Disease Program"
 

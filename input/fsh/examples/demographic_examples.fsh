@@ -7,17 +7,17 @@ Description: "An example Patient resource conforming to the EClaimsPatient profi
 * id = "ECLM-PT-001"
 
 * identifier[0].use = #official
-* identifier[0].type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/identifier-types-cs"
+* identifier[0].type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/identifier-types-cs"
 * identifier[0].type.coding[0].code = #SHA-NUMBER
 * identifier[0].type.coding[0].display = "SHA Number"
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/sha-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/sha-number"
 * identifier[0].value = "SHA-2024-001234"
 
 * identifier[1].use = #official
-* identifier[1].type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/identifier-types-cs"
+* identifier[1].type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/identifier-types-cs"
 * identifier[1].type.coding[0].code = #NATIONAL-ID
 * identifier[1].type.coding[0].display = "National ID"
-* identifier[1].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/national-id"
+* identifier[1].system = "https://fhir.dha.go.ke/fhir/Identifier/national-id"
 * identifier[1].value = "12345678"
 
 * name[0].use = #official
@@ -38,7 +38,7 @@ Description: "An example Patient resource conforming to the EClaimsPatient profi
 * address[0].state = "Nairobi County"
 * address[0].country = "KE"
 
-* maritalStatus.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/civil-status-cs"
+* maritalStatus.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/civil-status-cs"
 * maritalStatus.coding[0].code = #MARRIED
 * maritalStatus.coding[0].display = "Married"
 
@@ -121,10 +121,10 @@ Description: "An example Practitioner resource conforming to EClaimsPractitioner
 * id = "ECLM-PRA-001"
 
 * identifier[0].use = #official
-* identifier[0].type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/identifier-types-cs"
+* identifier[0].type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/identifier-types-cs"
 * identifier[0].type.coding[0].code = #SHA-NUMBER
 * identifier[0].type.coding[0].display = "SHA Number"
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/provider-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/provider-number"
 * identifier[0].value = "DR-KE-00456"
 
 * active = true

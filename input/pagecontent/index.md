@@ -6,7 +6,7 @@
 
 | Property | Value |
 |---|---|
-| **Canonical URL** | `https://nshr-uat.sha.go.ke/fhir` |
+| **Canonical URL** | `https://fhir.dha.go.ke/fhir` |
 | **Version** | 0.1.0 |
 | **Status** | Draft |
 | **FHIR Version** | R4 (4.0.1) |
@@ -85,7 +85,7 @@ This guide is part of the broader Kenya FHIR Interoperability Framework publishe
 |---|---|
 | [Kenya Core FHIR IG](https://fhir.dha.go.ke/core) | Base patient demographic and clinical resource profiles reused in this IG |
 | [Kenya NCCP FHIR IG](https://fhir.dha.go.ke/nccp) | Cancer-specific claim and clinical profiles that extend eClaims patterns |
-| [Kenya ePrescription FHIR IG](https://fhir.dha.go.ke/eprescription) | MedicationRequest patterns referenced in pharmacy claims |
+| [Kenya ePrescription FHIR IG](https://fhir.dha.go.ke/erx) | MedicationRequest patterns referenced in pharmacy claims |
 | [Kenya Patient Summary (KPS) FHIR IG](https://fhir.dha.go.ke/kps) | Patient summary data referenced during eligibility checks |
 
 ---

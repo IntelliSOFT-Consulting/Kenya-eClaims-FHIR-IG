@@ -9,7 +9,7 @@ This profile covers invasive procedures requiring a theatre or sterile setting.
 * insert KenyaClaimBaseRules
 
 * use = #preauthorization
-* type = https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs#institutional
+* type = https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs#institutional
 
 * extension contains AnaesthesiaType named anaesthesiaType 1..1 MS
 * extension contains ChiefComplaint named chiefComplaint 1..1 MS

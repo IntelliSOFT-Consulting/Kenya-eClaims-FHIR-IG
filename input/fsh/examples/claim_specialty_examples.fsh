@@ -10,22 +10,22 @@ Title: "Example Kenya Claim Base"
 Description: "An example Claim conforming to the KenyaClaimBase profile."
 
 * id = "ECLM-CB-001"
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-claimbase"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-claimbase"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-BASE-001"
 
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs"
 * type.coding[0].code = #institutional
 * type.coding[0].display = "Institutional"
 
-* subType.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-subtype-cs"
+* subType.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-subtype-cs"
 * subType.coding[0].code = #inpatient
 * subType.coding[0].display = "Inpatient"
 
@@ -47,15 +47,15 @@ Description: "An example Claim conforming to the KenyaClaimBase profile."
 
 * careTeam[0].sequence = 1
 * careTeam[0].provider = Reference(Practitioner/ECLM-PRA-001)
-* careTeam[0].role.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-care-team-role-cs"
 * careTeam[0].role.coding[0].code = #PRIMARY
 * careTeam[0].role.coding[0].display = "Primary provider"
-* careTeam[0].qualification.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-provider-qualification-cs"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MD
 * careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #NC72.5
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Fracture of shaft of femur"
 
@@ -65,7 +65,7 @@ Description: "An example Claim conforming to the KenyaClaimBase profile."
 
 * item[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
-* item[0].productOrService.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-07
 * item[0].productOrService.coding[0].display = "Inpatient Services"
 * item[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"
@@ -89,18 +89,18 @@ Title: "Example Imaging Preauthorization"
 Description: "An example Claim conforming to KenyaImagingPreauth for MRI of the right femur."
 
 * id = "ECLM-IMG-001"
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-imagingpreauth"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-imagingpreauth"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-IMG-001"
 
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs"
 * type.coding[0].code = #institutional
 * type.coding[0].display = "Institutional"
 
@@ -122,15 +122,15 @@ Description: "An example Claim conforming to KenyaImagingPreauth for MRI of the 
 
 * careTeam[0].sequence = 1
 * careTeam[0].provider = Reference(Practitioner/ECLM-PRA-001)
-* careTeam[0].role.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-care-team-role-cs"
 * careTeam[0].role.coding[0].code = #ORDERING
 * careTeam[0].role.coding[0].display = "Ordering provider"
-* careTeam[0].qualification.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-provider-qualification-cs"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MD
 * careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #NC72.5
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Fracture of shaft of femur"
 
@@ -140,7 +140,7 @@ Description: "An example Claim conforming to KenyaImagingPreauth for MRI of the 
 
 * item[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
-* item[0].productOrService.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-09
 * item[0].productOrService.coding[0].display = "Medical Imaging"
 * item[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"
@@ -167,18 +167,18 @@ Title: "Example Optical Preauthorization"
 Description: "An example Claim conforming to KenyaOpticalPreauth for prescription eyeglasses."
 
 * id = "ECLM-OPT-001"
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-opticalpreauth"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-opticalpreauth"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-OPT-001"
 
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs"
 * type.coding[0].code = #vision
 * type.coding[0].display = "Vision"
 
@@ -200,15 +200,15 @@ Description: "An example Claim conforming to KenyaOpticalPreauth for prescriptio
 
 * careTeam[0].sequence = 1
 * careTeam[0].provider = Reference(Practitioner/ECLM-PRA-001)
-* careTeam[0].role.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-care-team-role-cs"
 * careTeam[0].role.coding[0].code = #PRIMARY
 * careTeam[0].role.coding[0].display = "Primary provider"
-* careTeam[0].qualification.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-provider-qualification-cs"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MD
 * careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #9C80.0
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Myopia"
 
@@ -218,7 +218,7 @@ Description: "An example Claim conforming to KenyaOpticalPreauth for prescriptio
 
 * item[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
-* item[0].productOrService.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-05
 * item[0].productOrService.coding[0].display = "Eye Health"
 * item[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"
@@ -246,18 +246,18 @@ Title: "Example Renal Preauthorization"
 Description: "An example Claim conforming to KenyaRenalPreauth for a haemodialysis session."
 
 * id = "ECLM-REN-001"
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-renalpreauth"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-renalpreauth"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-REN-001"
 
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs"
 * type.coding[0].code = #institutional
 * type.coding[0].display = "Institutional"
 
@@ -279,15 +279,15 @@ Description: "An example Claim conforming to KenyaRenalPreauth for a haemodialys
 
 * careTeam[0].sequence = 1
 * careTeam[0].provider = Reference(Practitioner/ECLM-PRA-001)
-* careTeam[0].role.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-care-team-role-cs"
 * careTeam[0].role.coding[0].code = #PRIMARY
 * careTeam[0].role.coding[0].display = "Primary provider"
-* careTeam[0].qualification.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-provider-qualification-cs"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MD
 * careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #GB61
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Chronic kidney disease"
 
@@ -297,7 +297,7 @@ Description: "An example Claim conforming to KenyaRenalPreauth for a haemodialys
 
 * item[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
-* item[0].productOrService.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-16
 * item[0].productOrService.coding[0].display = "Renal Care Services"
 * item[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"
@@ -325,18 +325,18 @@ Title: "Example Oncology Preauthorization"
 Description: "An example Claim conforming to KenyaOncologyPreauth for a chemotherapy session."
 
 * id = "ECLM-ONC-001"
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-oncologypreauth"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-oncologypreauth"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-ONC-001"
 
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs"
 * type.coding[0].code = #institutional
 * type.coding[0].display = "Institutional"
 
@@ -358,15 +358,15 @@ Description: "An example Claim conforming to KenyaOncologyPreauth for a chemothe
 
 * careTeam[0].sequence = 1
 * careTeam[0].provider = Reference(Practitioner/ECLM-PRA-001)
-* careTeam[0].role.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-care-team-role-cs"
 * careTeam[0].role.coding[0].code = #PRIMARY
 * careTeam[0].role.coding[0].display = "Primary provider"
-* careTeam[0].qualification.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-provider-qualification-cs"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MD
 * careTeam[0].qualification.coding[0].display = "Doctor of Medicine"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #2C6Y
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Other specified malignant neoplasms of breast"
 
@@ -376,7 +376,7 @@ Description: "An example Claim conforming to KenyaOncologyPreauth for a chemothe
 
 * item[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
-* item[0].productOrService.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-06
 * item[0].productOrService.coding[0].display = "Hematology and Oncology"
 * item[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"
@@ -405,18 +405,18 @@ Title: "Example Surgical Preauthorization"
 Description: "An example Claim conforming to KenyaSurgicalPreauth for an appendicectomy."
 
 * id = "ECLM-SUR-001"
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-surgicalpreauth"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-surgicalpreauth"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-SUR-001"
 
 * status = #active
 * use = #preauthorization
 
-* type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs"
 * type.coding[0].code = #institutional
 * type.coding[0].display = "Institutional"
 
@@ -438,15 +438,15 @@ Description: "An example Claim conforming to KenyaSurgicalPreauth for an appendi
 
 * careTeam[0].sequence = 1
 * careTeam[0].provider = Reference(Practitioner/ECLM-PRA-001)
-* careTeam[0].role.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-care-team-role-cs"
 * careTeam[0].role.coding[0].code = #PRIMARY
 * careTeam[0].role.coding[0].display = "Primary provider"
-* careTeam[0].qualification.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-provider-qualification-cs"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MBChB
 * careTeam[0].qualification.coding[0].display = "Bachelor of Medicine and Bachelor of Surgery (MBChB)"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #DC80
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Appendicitis"
 
@@ -456,7 +456,7 @@ Description: "An example Claim conforming to KenyaSurgicalPreauth for an appendi
 
 * item[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
-* item[0].productOrService.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-19
 * item[0].productOrService.coding[0].display = "Surgical Services"
 * item[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"
@@ -485,22 +485,22 @@ Title: "Example Claim Submission"
 Description: "An example Claim conforming to KenyaClaimSubmission for final payment after inpatient services."
 
 * id = "ECLM-SUB-001"
-* meta.profile[0] = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/ke-eclaims-claimsubmission"
+* meta.profile[0] = "https://fhir.dha.go.ke/fhir/StructureDefinition/ke-eclaims-claimsubmission"
 * meta.tag[0].system = "http://terminology.hl7.org/CodeSystem/common-tags"
 * meta.tag[0].code = #actionable
 * meta.tag[0].display = "Actionable"
 
-* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number"
+* identifier[0].system = "https://fhir.dha.go.ke/fhir/Identifier/claim-number"
 * identifier[0].value = "CLAIM-SUB-001"
 
 * status = #active
 * use = #claim
 
-* type.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-type-cs"
+* type.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-type-cs"
 * type.coding[0].code = #institutional
 * type.coding[0].display = "Institutional"
 
-* subType.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-subtype-cs"
+* subType.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-subtype-cs"
 * subType.coding[0].code = #inpatient
 * subType.coding[0].display = "Inpatient"
 
@@ -522,15 +522,15 @@ Description: "An example Claim conforming to KenyaClaimSubmission for final paym
 
 * careTeam[0].sequence = 1
 * careTeam[0].provider = Reference(Practitioner/ECLM-PRA-001)
-* careTeam[0].role.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/claim-care-team-role-cs"
+* careTeam[0].role.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/claim-care-team-role-cs"
 * careTeam[0].role.coding[0].code = #PRIMARY
 * careTeam[0].role.coding[0].display = "Primary provider"
-* careTeam[0].qualification.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-provider-qualification-cs"
+* careTeam[0].qualification.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-provider-qualification-cs"
 * careTeam[0].qualification.coding[0].code = #MBChB
 * careTeam[0].qualification.coding[0].display = "Bachelor of Medicine and Bachelor of Surgery (MBChB)"
 
 * diagnosis[0].sequence = 1
-* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* diagnosis[0].diagnosisCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * diagnosis[0].diagnosisCodeableConcept.coding[0].code = #DC80
 * diagnosis[0].diagnosisCodeableConcept.coding[0].display = "Appendicitis"
 
@@ -540,7 +540,7 @@ Description: "An example Claim conforming to KenyaClaimSubmission for final paym
 
 * item[0].sequence = 1
 * item[0].careTeamSequence[0] = 1
-* item[0].productOrService.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
+* item[0].productOrService.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/KenyaSocialHealthAuthorityInterventionCS"
 * item[0].productOrService.coding[0].code = #SHA-19
 * item[0].productOrService.coding[0].display = "Surgical Services"
 * item[0].category.coding[0].system = "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"

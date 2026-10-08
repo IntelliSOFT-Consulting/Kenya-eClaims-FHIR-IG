@@ -13,7 +13,7 @@ Description: "An example MedicationRequest conforming to EClaimsMedicationReques
 * category[0].coding[0].code = #inpatient
 * category[0].coding[0].display = "Inpatient"
 
-* medicationCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-generic-products-cs"
+* medicationCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-generic-products-cs"
 * medicationCodeableConcept.coding[0].code = #GE10002
 * medicationCodeableConcept.coding[0].display = "Metformin 500 mg Oral Tablet"
 
@@ -27,7 +27,7 @@ Description: "An example MedicationRequest conforming to EClaimsMedicationReques
 * requester.reference = "Practitioner/ECLM-PRA-001"
 * requester.display = "Dr. James Ochieng"
 
-* reasonCode[0].coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* reasonCode[0].coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * reasonCode[0].coding[0].code = #5A11
 * reasonCode[0].coding[0].display = "insulin resistant diabetes"
 
@@ -48,7 +48,7 @@ Description: "An example MedicationDispense conforming to EClaimsMedicationDispe
 
 * status = #completed
 
-* medicationCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-generic-products-cs"
+* medicationCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-generic-products-cs"
 * medicationCodeableConcept.coding[0].code = #GE10002
 * medicationCodeableConcept.coding[0].display = "Metformin 500 mg Oral Tablet"
 
@@ -82,7 +82,7 @@ Description: "An example MedicationStatement conforming to EClaimsMedicationStat
 
 * status = #active
 
-* medicationCodeableConcept.coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/eclaims-generic-products-cs"
+* medicationCodeableConcept.coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/eclaims-generic-products-cs"
 * medicationCodeableConcept.coding[0].code = #GE10002
 * medicationCodeableConcept.coding[0].display = "Metformin 500 mg Oral Tablet"
 
@@ -90,7 +90,7 @@ Description: "An example MedicationStatement conforming to EClaimsMedicationStat
 
 * effectivePeriod.start = "2025-11-02"
 
-* reasonCode[0].coding[0].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-codes-cs"
+* reasonCode[0].coding[0].system = "https://fhir.dha.go.ke/terminology/CodeSystem/icd11-codes-cs"
 * reasonCode[0].coding[0].code = #5A11
 * reasonCode[0].coding[0].display = "insulin resistant diabetes"
 

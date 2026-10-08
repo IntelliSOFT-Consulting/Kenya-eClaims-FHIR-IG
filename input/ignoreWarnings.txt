@@ -5,11 +5,11 @@ The Implementation Guide contains no examples for this extension
 The Implementation Guide contains no examples for this profile
 
 # Kenya eClaims identifier NamingSystem — local identifier systems, no NamingSystem resources needed
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/claim-number'
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/condition-number'
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/coverage-number'
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/encounter-number'
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/sha-number'
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/national-id'
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/payment-notice-number'
-No definition could be found for URL value 'https://nshr-uat.sha.go.ke/fhir/Identifier/provider-number'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/claim-number'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/condition-number'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/coverage-number'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/encounter-number'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/sha-number'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/national-id'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/payment-notice-number'
+No definition could be found for URL value 'https://fhir.dha.go.ke/fhir/Identifier/provider-number'
